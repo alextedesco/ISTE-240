@@ -15,7 +15,7 @@ body {
 
 .container {
     position: relative;
-    width: 1000px;
+    max-width: 1000px;
 }
 
 /* Styling for font-sizes of any text */
@@ -126,4 +126,25 @@ li a:hover {
     background-color:rgb(128, 128, 128);
     color:white;
     transform: scale(1.25);
+}
+
+/* Styles for making the webpage mobile friendly */
+
+@media only screen and (max-width: 750px) {
+    .portrait {
+        max-width: 50%;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0);
+        -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0);
+    }
+
+    .kiwi {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 696px) {
+    li {
+    margin-bottom: 1em;
+    }
 }
