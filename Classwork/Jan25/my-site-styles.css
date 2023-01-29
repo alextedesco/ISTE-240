@@ -1,0 +1,25 @@
+.container {
+    width: 200px;
+    height: 200px;
+    background: purple;
+    position: relative;
+    color: white;
+}
+
+.word {
+    top: 40px;
+    position: absolute;
+
+}
+
+.play {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    color: red;
+}
+
+.icon {
+    position: absolute;
+    top: 0px;
+}
