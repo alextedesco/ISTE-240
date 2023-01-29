@@ -55,6 +55,7 @@ nav {
 
 .box:hover {
   background: purple;
+  cursor: pointer;
 }
 
 /* Places each Box into the correct Row & Column */
@@ -82,7 +83,7 @@ nav {
   top: 5%;
   left: 5%;
   font-size: 120px;
-  color: lime;
+  color: olivedrab;
   text-shadow: 2px 2px 0px yellow;
 }
 
@@ -94,7 +95,7 @@ p {
   bottom: 35%;
   font-size: 30px;
   font-weight: bold;
-  color: pink;
+  color: plum;
   z-index: 1;
   margin: 0;
 }
