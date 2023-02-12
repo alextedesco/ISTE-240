@@ -16,14 +16,19 @@
         <header>
             <nav>
                 <img src="assets/gatlinburg-logo.png">
-                    <ul>
-                        <li id="home">Home</li>
-                        <li>Activities</li>
-                        <li>Food</li>
-                        <li>Rest</li>
-                        <li>People</li>
-                        <li>Feedback</li>
-                    </ul>
+                <ul>
+                    <li>Home</li>
+                    <p>|</p>
+                    <li>Activities</li>
+                    <p>|</p>
+                    <li>Food</li>
+                    <p>|</p>
+                    <li>Rest</li>
+                    <p>|</p>
+                    <li>People</li>
+                    <p>|</p>
+                    <li>Feedback</li>
+                </ul>
             </nav>
         </header>
 
@@ -37,18 +42,20 @@
 
             <fieldset>
                 <legend>Favorite Place</legend>
-                <input type="radio" name="places" value="nationalPark">Great Smokey Mountains National Park<br/>
-                <input type="radio" name="places" value="dollywood">Dollywood<br/>
-                <input type="radio" name="places" value="museum">Titanic Museum<br/>
-                <input type="radio" name="places" value="civilwar">Buttonwillow Civil War Theater<br/>
-                <input type="radio" name="places" value="cooters">Cooter's Place<br/>
+                <input type="radio" name="places" value="nationalPark">Great Smokey Mountains National Park<br />
+                <input type="radio" name="places" value="dollywood">Dollywood<br />
+                <input type="radio" name="places" value="museum">Titanic Museum<br />
+                <input type="radio" name="places" value="civilwar">Buttonwillow Civil War Theater<br />
+                <input type="radio" name="places" value="cooters">Cooter's Place<br />
             </fieldset>
 
             <br>
-            <!-- <input type="range" min="1" max="10" value="5" class="slider-color" id="id1"> -->
 
-            <input class="slider" type="range" value="5" min="1" max="10" oninput="this.nextElementSibling.value = this.value">
-            <output>5</output>
+            <div class="slider-menu">
+                <input class="slider" type="range" value="5" min="1" max="10"
+                    oninput="this.nextElementSibling.value = this.value">
+                <output>5</output>
+            </div>
             <br>
             <input class="submit" type="submit">
         </form>

@@ -57,11 +57,16 @@ nav ul {
 
 nav li {
     padding: 10px;
-    list-style: "|";
 }
 
-#home {
-    list-style: none;
+li:hover {
+    background-color: forestgreen;
+    border-radius: 5px;
+    opacity: .75;
+}
+
+p {
+    user-select: none;
 }
 
 hr {
@@ -73,12 +78,6 @@ hr {
     padding: 0;
     margin: 0;
 }
-
-.submut {
-    padding: 0;
-    margin: 0;
-}
-
 
 h1 {
     text-align: center;
