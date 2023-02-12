@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Logo to left of the menu -->
+    <div class="container">
+        <header>
+            <nav>
+                <img src="assets/gatlinburg-logo.png">
+                    <ul>
+                        <li>Home</li>
+                        <li>Activities</li>
+                        <li>Food</li>
+                        <li>Rest</li>
+                        <li>People</li>
+                        <li>Feedback</li>
+                    </ul>
+            </nav>
+        </header>
+
+        <h1>Please tell us about visit:</h1>
+        <hr>
+
+        <form name="contact-form" method="get" action="done.html">
+
+            <input type="number" name="howmany" value="howmany" dir="ltr">How many in your group?<br>
+            <input type="date" name="when" value="when" dir="rtl">When did you visit?<br>
+
+            <fieldset>
+
+                <legend>Favorite Place</legend>
+                <input type="radio" name="places" value="nationalPark">Great Smokey Mountains National Park<br />
+                <input type="radio" name="places" value="dollywood">Dollywood<br />
+                <input type="radio" name="places" value="museum">Titanic Museum<br />
+                <input type="radio" name="places" value="civilwar">Buttonwillow Civil War Theater<br />
+                <input type="radio" name="places" value="cooters">Cooter's Place<br />
+            </fieldset>
+
+            <!-- <input type="range" min="1" max="10" value="5" class="slider-color" id="id1"> -->
+
+            <input type="range" value="5" min="1" max="10" oninput="this.nextElementSibling.value = this.value">
+            <output>5</output>
+            <br>
+            <input type="submit">
+
+
+
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

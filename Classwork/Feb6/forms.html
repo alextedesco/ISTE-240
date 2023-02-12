@@ -4,16 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Forms - Demo</title>
 </head>
 <body>
 
+    Name: <input type="text">
+    <fieldset>
+        <legend>Visit Information</legend>
+        How many visited <input type="number" name="visited" id=""> <br/>
+        Date: <input type="date"> <br/>
+        Name: <input type="text">
+    </fieldset>
+
+
+
     <form name="contact-form" method="get" action="done.html">
 
-        <input type="text">
-
+        <input type="radio" name="places" value="Museum"> Museum <br/>
+        <input type="radio" name="places" value="Park"> Park <br/>
+        <input type="radio" name="places" value="Museum"> Stadium <br/>
+        <input type="submit">
 
     </form>
+
+    <style>
+
+        .dropdown ul {
+            display: flex;
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            justify-content: space-around;
+            background-color: lightskyblue;
+            position: relative;
+        }
+
+        .dropdown li {
+            padding: 10px;
+        }
+
+        .dropdown li:hover {
+            background-color: orange;
+        }
+
+        .dropdown .submenu {
+            display: block;
+            position: absolute;
+            background-color: yellow;
+            top: 39px;
+            /* display: none; */
+            opacity: 0;
+        }
+
+        .dropdown li:hover .submenu {
+            /* display: block; */
+            opacity: 100;
+        }
+        
+    </style>
+
+    <nav class="dropdown">
+        <ul>
+            <li>Hotels
+                <ul class="submenu">
+                    <li>Hilton</li>
+                    <li>Hyatt</li>
+                    <li>Mariott</li>
+                </ul>
+            </li>
+            <li>Museums
+                <ul class="submenu">
+                    <li>Science</li>
+                    <li>History</li>
+                </ul>
+            </li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <p>dhidsfhbjkfa</p>
     
 </body>
 </html>
