@@ -1,38 +1,38 @@
 html {
-    background-color: gold;
-    padding: 0;
-    margin: 0;
+    background-color: darkgreen;
+    height: 100%;
 }
 
 body {
-    margin: 0 0 0 0;
+    margin: 0;
+    height: 100vh
 }
 
 .container {
     width: 90%;
-    height: 100%;
     margin:  0 auto 0 auto;
-    background-color: orangered;
+    background-color: forestgreen;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 header {
-    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    height:100px;
+    margin: 0;
 }
 
 nav {
     display: block;
-    /* border: 1px solid pink; */
-    position: relative;
-    /* top: 10px; */
     width: 99%;
     height: 100%;
+    margin: 0;
+
 }
 
-img {
-    border: 1px solid pink;
+nav img {
     float: left;
-    height: 100px;
+    height: 90px;
     padding-right: 1em;
     padding-left: 1em;
     display: block;
@@ -42,31 +42,48 @@ img {
 
 nav ul {
     display: flex;
+    top: 30px;
+    align-items: center;
     margin: 0px;
     padding: 0px;
     list-style: none;
     justify-content: space-around;
-    background-color: orange;
+    background-color: goldenrod;
     position: relative;
     border: 3px black solid;
+    border-radius: 10px 10px 10px 10px;
     text-align: center;
-    
-}
-
-hr {
-    color: black;
 }
 
 nav li {
     padding: 10px;
+    list-style: "|";
 }
 
-nav li:hover {
-    background-color: orange;
+#home {
+    list-style: none;
 }
+
+hr {
+    width: 75%;
+    border: solid 1px black;
+}
+
+.slider {
+    padding: 0;
+    margin: 0;
+}
+
+.submut {
+    padding: 0;
+    margin: 0;
+}
+
 
 h1 {
     text-align: center;
+    margin: 0;
+    font-size: 20px;
 }
 
 input {
@@ -75,13 +92,21 @@ input {
     text-align: right;
 }
 
+form {
+    font-size: 12px;
+}
+
+.form {
+    width: 200px;
+}
+
 fieldset {
     border-color: black;
 }
 
 output {
-    background-color: gold;
-    border: 10px solid gold;
+    background-color: goldenrod;
+    padding: 0.25em;
+    border: 2px solid black;
     border-radius: 5px 5px 5px 5px;
 }
-

@@ -17,7 +17,7 @@
             <nav>
                 <img src="assets/gatlinburg-logo.png">
                     <ul>
-                        <li>Home</li>
+                        <li id="home">Home</li>
                         <li>Activities</li>
                         <li>Food</li>
                         <li>Rest</li>
@@ -32,29 +32,25 @@
 
         <form name="contact-form" method="get" action="done.html">
 
-            <input type="number" name="howmany" value="howmany" dir="ltr">How many in your group?<br>
-            <input type="date" name="when" value="when" dir="rtl">When did you visit?<br>
+            <input type="number" name="howmany" value="howmany" class="form">How many in your group?<br>
+            <input type="date" name="when" value="when" class="form">When did you visit?<br>
 
             <fieldset>
-
                 <legend>Favorite Place</legend>
-                <input type="radio" name="places" value="nationalPark">Great Smokey Mountains National Park<br />
-                <input type="radio" name="places" value="dollywood">Dollywood<br />
-                <input type="radio" name="places" value="museum">Titanic Museum<br />
-                <input type="radio" name="places" value="civilwar">Buttonwillow Civil War Theater<br />
-                <input type="radio" name="places" value="cooters">Cooter's Place<br />
+                <input type="radio" name="places" value="nationalPark">Great Smokey Mountains National Park<br/>
+                <input type="radio" name="places" value="dollywood">Dollywood<br/>
+                <input type="radio" name="places" value="museum">Titanic Museum<br/>
+                <input type="radio" name="places" value="civilwar">Buttonwillow Civil War Theater<br/>
+                <input type="radio" name="places" value="cooters">Cooter's Place<br/>
             </fieldset>
 
+            <br>
             <!-- <input type="range" min="1" max="10" value="5" class="slider-color" id="id1"> -->
 
-            <input type="range" value="5" min="1" max="10" oninput="this.nextElementSibling.value = this.value">
+            <input class="slider" type="range" value="5" min="1" max="10" oninput="this.nextElementSibling.value = this.value">
             <output>5</output>
             <br>
-            <input type="submit">
-
-
-
-
+            <input class="submit" type="submit">
         </form>
 
     </div>
