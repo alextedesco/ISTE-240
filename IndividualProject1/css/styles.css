@@ -85,14 +85,20 @@ li:hover {
 }
 
 h1 {
-    text-align: center;
+    text-align: left;
     margin: 0;
     font-size: 30px;
 }
 
 hr {
+    display: inline-block;
+    justify-content: left;
     width: 75%;
     border: solid 1px goldenrod;
+}
+
+img {
+    float: right;
 }
 
 iframe {
@@ -166,4 +172,26 @@ output {
 
 .submit {
     font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    padding-right: 2em;
+}
+
+span img {
+    width: 500px;
+    border-radius: 15px;
+    /* padding-right: 1em; */
+}
+
+span p {
+    font-size: 25px;
+}
+
+span {
+    display:inline-block;
+    padding: 1em;
+    /* border: 5px solid pink; */
 }

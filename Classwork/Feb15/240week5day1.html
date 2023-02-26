@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script3.js"></script>
+
+</head>
+
+<body>
+    <script>
+
+        //alert("Hello");
+        favcolor = "red";
+        sum = 5 + 5;
+
+        //console.log("Sum: " + (4 + 1) )
+        //alert(favcolor)
+
+        function validate() {
+
+            //firstname = document.getElementById("firstname").value;
+            //lastname = document.getElementById("lastname").value;
+            firstname = document.forms['contactform']['firstname'].value;
+            lastname = document.forms['contactform']['lastname'].value;
+
+            errormsg = "";
+
+            if (firstname == "") {
+                errormsg += "fill in firstname\n";
+            }
+            if (lastname == "") {
+                errormsg += "fill in lastname\n";
+            }
+
+            if (document.getElementById("radio").checked == false && document.getElementById("tv").checked == false && document.getElementById("other").checked == false) {
+                alert('radio not filled in');
+            }
+            // Make sure at least one item is checked
+            referralElement = document.forms['dontactform']['referral'];
+            for (i = 0; i < referralElement.length; i++) {
+                // console.log(referralElement[1]) } ;
+                // console.log (referralElement[i].checked);
+                if (referralElement[i].checked) {
+                    console.log('1 Item Checked');
+                    errormsg += "You must check at least on box\n";
+                } else {
+                    console.log('1 Item Checked');
+                    errormsg += "You must check at least on box\n";
+                }
+            }
+
+            if (errormsg != "") {
+                //we do have an error
+                alert(errormsg);
+                return false;
+            }
+
+            return true;
+        }
+
+        // console.log(document.getElementById('texttochange'));
+
+    </script>
+
+    <div>Hello</div>
+    <div id="texttochange">Here is my lovely text</div>
+
+    <script>
+        document.getElementById('texttochange').innerHTML = "Changed to inner html";
+        document.getElementById('texttochange').style.color = "blue";
+        document.getElementById('texttochange').style.backgroundColor = "lightgrey";
+
+        // document.getElementById('texttochange').id = "Change to inner html";
+    </script>
+
+
+
+    <form name="contactform" action="process.php" method="get" onsubmit="return validate();">
+        Firstname: <input type="text" name="firstname" /> <br />
+        Lastname: <input type="text" name="lastname" /><br />
+        TV commericial<br />
+        How did you hear about us:<br />
+        <input type="radio" name="referral" value="radio" id="radio" checked>Radio ad<br />
+        <input type="radio" name="referral" value="tv" id="tv">TV commericial<br />
+        <input type="radio" name="referral" value="other" id="other">Other<br />
+
+        <br>
+
+        <select name="favoritecolor" id="favoritecolor">
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+        </select></br>
+
+        <input type="submit" value="Submit Registration" />
+
+
+    </form>
+</body>
+
+</html>
