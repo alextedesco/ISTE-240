@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var favcolor = "red";
+
+        function myColor() {
+            var colors = Array([1,2,3]);
+
+            console.log (favcolor);
+            alert(colors);
+
+            favcolor = "green";
+
+        }
+
+        myColor();
+        console.log(favcolor);
+
+        function validate() {
+
+            // firstName = document.getElementById ("firstname").value;
+            // lastName = document.getElementById ("lastname").value;
+            // firstName = document.forms['contact'].firstname.value;
+            // lastName = document.forms['contact'].lastname.value;
+
+            console.log (document.forms['contact'])
+
+
+            console.log(firstName.value);
+            state = true;
+            errormessage = "";
+
+            if (firstName.value == "") {
+                errormessage += "You must eneter a firstname\n"
+                state = false;
+            }
+
+            if (lastName.value == "") {
+                errormessage += "You must eneter a lastname\n"
+                state = false;
+            }
+
+            if (errormessage != "") {
+                alert (errormessage);
+            }
+
+            return state;
+        }
+    </script>
+
+    <div onmouseover="javascript:alert('here')">Hello</div>
+    <form name="contact" method="post" onsubmit="return validate()" action="process.php">
+
+        <input type="text" name="firstName" id="firstname" minlength="7" maxlength="9" />
+        <input type="text" name="lastName" id="lastname" minlength="7" maxlength="9"/>
+        <input type="submit" value="Continue"/>
+
+    </form>
+</body>
+</html>
