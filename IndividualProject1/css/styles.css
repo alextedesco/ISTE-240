@@ -188,9 +188,14 @@ a {
 span img {
     width: 500px;
     border-radius: 15px;
+    float: right;
 }
 
 span p {
+    font-size: 25px;
+}
+
+span ul {
     font-size: 25px;
 }
 
@@ -213,6 +218,10 @@ span a {
     text-decoration: underline;
 }
 
+span li:hover {
+    background-color: transparent;
+    
+}
 
 .menu {
     margin-top: 1em;
