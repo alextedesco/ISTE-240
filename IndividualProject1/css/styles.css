@@ -1,6 +1,6 @@
 /* Alex Tedesco */
 /* ISTE-240 */
-/* EX04 - Menu and Forms */
+/* Individual Project 1 */
 
 /* Styles for HTML document */
 
@@ -188,7 +188,6 @@ a {
 span img {
     width: 500px;
     border-radius: 15px;
-    /* padding-right: 1em; */
 }
 
 span p {
@@ -199,6 +198,11 @@ span {
     display:inline-block;
     padding: 1em;
     /* border: 5px solid pink; */
+}
+
+.interior img {
+    padding: 5px;
+    padding: 1em;
 }
 
 a {
@@ -215,6 +219,9 @@ span a {
     border-radius: 0;
 }
 
+.hours {
+    font-size: 25px;
+}
 
 i {
     float: left;
