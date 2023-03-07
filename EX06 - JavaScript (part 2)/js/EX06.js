@@ -1,5 +1,5 @@
 // Alex Tedesco
-// 2/19/2023
+// 3/5/2023
 // ISTE-240 Exercise 6 - JavaScript (Part 2)
 
 // Exercise 5a
@@ -77,7 +77,28 @@ function mouseover () {
     document.getElementById('rb').style.color = color;
 }
 
-// Exercise 5e
+// // Exercise 5e
+// function multiply() {
+//     // Stores the first operand and the second operand into variables
+//     var num1 = document.getElementById('firstoperand').value;
+//     var num2 = document.getElementById('secondoperand').value;
+    
+//     // Calculates answer and stores in variable
+//     var answer = parseInt(num1) * parseInt(num2);
+//     document.getElementById('result').innerHTML = answer;
+// }
+  
+//   function divide() {
+//     // Stores the first operand and the second operand into variables
+// 	var num1 = document.getElementById('firstoperand').value;
+//     var num2 = document.getElementById('secondoperand').value;
+//     // Calculates answer and stores in variable
+
+//     var answer = parseInt(num1) / parseInt(num2);
+//     document.getElementById('result').innerHTML = answer;
+// }
+
+// Exercise 6e
 function multiply() {
     // Stores the first operand and the second operand into variables
     var num1 = document.getElementById('firstoperand').value;
@@ -85,7 +106,16 @@ function multiply() {
     
     // Calculates answer and stores in variable
     var answer = parseInt(num1) * parseInt(num2);
-    document.getElementById('result').innerHTML = answer;
+    var node = document.createTextNode(answer);
+    // Creates a text node
+    var result = document.getElementById('result');
+
+    // Checks if the result element currently has an answer. If it does it resets it back to nothing
+    if (parseInt(result.childNodes.length) > 0) {
+        result.innerHTML = "";
+    }
+    // Appends the textNode
+    result.appendChild(node);
 }
   
   function divide() {
@@ -93,13 +123,20 @@ function multiply() {
 	var num1 = document.getElementById('firstoperand').value;
     var num2 = document.getElementById('secondoperand').value;
     // Calculates answer and stores in variable
-
+    
     var answer = parseInt(num1) / parseInt(num2);
-    document.getElementById('result').innerHTML = answer;
+    // Creates the text node
+    var node = document.createTextNode(answer);
+    var result = document.getElementById('result');
+
+    // Checks if the result element currently has an answer. If it does it resets it back to nothing
+    if (parseInt(result.childNodes.length) > 0) {
+        result.innerHTML = "";
+    }
+
+    // Appends the textNode
+    result.appendChild(node);
 }
-
-// Exercise 6e
-
 
 
 
