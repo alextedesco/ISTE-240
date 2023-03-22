@@ -19,7 +19,8 @@
 
     } else {
     if (!is_numeric($customerID)) {
-        echo "<p>You entered an invalid ID. Only numbers allowed!</p>";
+        // echo "<p>You entered an invalid ID. Only numbers allowed!</p>";
+        header("Location: orderform.php?name=" . $customerName);
     } else {
         // Pretty sure its ok to lets process
         switch ($pizzaSize) {
