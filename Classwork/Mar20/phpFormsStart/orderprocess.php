@@ -55,16 +55,17 @@
 
         echo "Tax: " . numfmt_format_currency($fmt,$taxAmount, "USD"); . "<br/>";
         ?>
+            Total: <?php echo "Total: " . numfmt_format_currency($fmt,$totalCost, "USD") ?>
 
-            Total: <?php
-                        echo "Total: " . numfmt_format_currency($fmt,$totalCost, "USD");
-                        
+            <br/>
+            Thank you for your order <?php echo $_POST['customerName'] ?>. It will be ready soon
 
+        <?php
     }
 }
 ?>
 
     Display Total
 
-<?php
+
     include ($path . 'assets/inc/footer.php')
