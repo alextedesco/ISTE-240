@@ -1,17 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="assets/css/pizza.css" />
-	<script type="text/javascript" src="assets/script/pizza.js"></script>
-</head>
-<body>
+<?php
+	$title = "Order a Pizza";
+	$path = "./";
 
-	<div id="wrapper">
-
-	<h1>Eat more Pizza!</h1>
-	<p><img src="assets/img/hotpizza.png"></p>
-	<div id="container">
+	include ($path . "assets/inc/header.php")
+?>
 		<h2>Order a Delicious Pizza!</h2>
 	
 		<form name="OrderForm" action="orderprocess.php"  onsubmit="return validateForm();" method="post">
@@ -28,7 +20,7 @@
 				<input type="submit"  name="Submit"  value=" Send Form"  />
 			</p>
 		</form>
-	</div> 
-	<footer>Dan's Pizza Shoppe &reg;</footer>
-</body>
-</html>
+
+		<?php
+			include ($path . "assets/inc/header.php")
+		?>
