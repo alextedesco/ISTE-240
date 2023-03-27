@@ -8,6 +8,11 @@
 	
 		<form name="OrderForm" action="orderprocess.php"  onsubmit="return validateForm();" method="post">
 			<p>Name:  <input type="text" name="customerName"  /></p>
+			<?php
+			if (isset($_GET['name'])) {
+				echo "<strong>You really messed up your idea moron</strong>";
+			}
+			?>
 			<p>ID:  <input type="text"  name="customerID"  /></p>
 			<p> Check the size of Pizza you would like to order:<br />
 				<!-- Note the <label> tags below that allow the user to click on the text! -->

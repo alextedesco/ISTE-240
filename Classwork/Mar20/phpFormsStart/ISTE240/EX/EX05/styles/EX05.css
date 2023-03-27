@@ -1,0 +1,17 @@
+/* Alex Tedesco */
+/* 2/19/2023 */
+/* ISTE-240 Exercise 5 - JavaScript (Part 1) */
+
+
+/* Contains the entirety of the page in the middle 90% */
+.container {
+    width: 90%;
+    margin: 0 auto 0 auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+}
+
+h2 {
+    background: lightgreen;
+    border-radius: 10px;
+    padding: 6px;
+}

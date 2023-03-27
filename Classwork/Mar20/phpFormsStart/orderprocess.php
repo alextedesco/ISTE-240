@@ -51,10 +51,10 @@
 
         die ("Tax: " . $taxAmount . " Total: " . $totalCost);
         
-        $fmt = numfmt_create('en_US', NumberFormatter::CURRENCY)
+        $fmt = numfmt_create('en_US', NumberFormatter::CURRENCY);
 
 
-        echo "Tax: " . numfmt_format_currency($fmt,$taxAmount, "USD"); . "<br/>";
+        echo "Tax: " . numfmt_format_currency($fmt,$taxAmount, "USD") . "<br/>";
         ?>
             Total: <?php echo "Total: " . numfmt_format_currency($fmt,$totalCost, "USD") ?>
 

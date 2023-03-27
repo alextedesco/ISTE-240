@@ -1,0 +1,169 @@
+/* Alex Tedesco */
+/* ISTE-240 */
+/* EX04 - Menu and Forms */
+
+/* Styles for HTML document */
+
+html {
+    background-color: darkgreen;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto 0 auto;
+    background-color: forestgreen;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Header/Navigation styles */
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    margin: 0;
+}
+
+nav {
+    display: block;
+    width: 98%;
+    margin: 0;
+}
+
+nav img {
+    float: left;
+    height: 90px;
+    padding-right: 1em;
+    padding-left: 1em;
+    display: block;
+    margin: auto;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    top: 30px;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    justify-content: space-around;
+    background-color: goldenrod;
+    position: relative;
+    border: 3px black solid;
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+nav li {
+    padding: 10px;
+}
+
+/* Creates an overlay when a list element of the nav is hovered over */
+
+li:hover {
+    background-color: forestgreen;
+    border-radius: 5px;
+    opacity: .75;
+}
+
+/* Prevents the "|" from being highlighted by the cursor or when hovered on*/
+
+.seperator {
+    user-select: none;
+}
+
+.seperator:hover {
+    background-color: goldenrod;
+    opacity: 1;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+}
+
+hr {
+    width: 75%;
+    border: solid 1px goldenrod;
+}
+
+iframe {
+    float: right;
+    height: 300px;
+    width: 500px;
+    padding: 1em;
+}
+
+/* Form Styles */
+
+form {
+    font-size: 15px;
+    margin-left: 1em;
+}
+
+input {
+    margin: 10px;
+    text-align: right;
+}
+
+.form {
+    width: 200px;
+}
+
+fieldset {
+    border-color: goldenrod;
+    border: 2px solid goldenrod;
+    margin-right: 1em;
+}
+
+output {
+    background-color: goldenrod;
+    padding: 0.25em;
+    border: 3px solid black;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 18px;
+    position: relative;
+    bottom: 5px;
+    padding: 8px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 500px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background: #d3d3d3;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: goldenrod;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: goldenrod;
+    cursor: pointer;
+}
+
+.submit {
+    font-size: 15px;
+}

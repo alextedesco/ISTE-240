@@ -1,0 +1,126 @@
+/* Alex Tedesco
+ISTE-240 Section 2 (Mon/Wed)
+Ex. 02 */
+
+/* Removes all margin and padding from 
+document unless otherwise specified */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Evenly spaces out items in Nav */
+
+nav {
+  background-color: lightblue;
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+  border-bottom: 3px solid black;
+  position: relative;
+  z-index: 2;
+}
+
+/* Positions and set image for the sidebar */
+
+.sidebar {
+  background-image: url("../assets/side.jpg");
+  height: 100%;
+  width: 150px;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+/* Sets grid for container and its child elements */
+
+.container {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  gap: 15px;
+  margin-left: 150px;
+  padding: 8px;
+}
+
+/* Box Styles */
+
+.box {
+  background: green;
+  border-radius: 1em;
+  width: 175px;
+  height: 175px;
+  transition: 1s background-color;
+}
+
+.box:hover {
+  background: purple;
+  cursor: pointer;
+}
+
+/* Places each Box into the correct Row & Column */
+
+.one {
+  grid-area: 1 / 1;
+}
+
+.two {
+  grid-area: 1 / 2;
+}
+
+.three {
+  grid-area: 2 / 1;
+}
+
+.four {
+  grid-area: 2 / 2;
+}
+
+/* Styling for making asterisk look like flower */
+
+.asterisk {
+  position: relative;
+  top: 5%;
+  left: 5%;
+  font-size: 120px;
+  color: olivedrab;
+  text-shadow: 2px 2px 0px yellow;
+}
+
+/* Styling for positioning flower name and font size/weight */
+
+p {
+  position: relative;
+  left: 26%;
+  bottom: 35%;
+  font-size: 30px;
+  font-weight: bold;
+  color: plum;
+  z-index: 1;
+  margin: 0;
+}
+
+/* Media Query for making boxes align vertically when viewport is less than 600px */
+
+@media (max-width:600px) {
+
+  .container {
+    display: block;
+  }
+
+  .box {
+    margin-bottom: 8px;
+  }
+}
+
+/* Media Query for removing image sidebar when viewport is less than 500px */
+
+@media (max-width:500px) {
+  .sidebar {
+    display: none;
+  }
+
+  .container {
+    margin: 0;
+  }
+}
