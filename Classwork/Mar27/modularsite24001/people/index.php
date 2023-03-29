@@ -1,8 +1,7 @@
 <?php
 
-    $title = "Home";
-    $path = "./";
-
+    $title = "People";
+    $path = "../";
 
     include($path.'assets/inc/header.php');
 
@@ -10,7 +9,7 @@
 
     include($path.'../dbcon.php');
 
-    $sql = "SELECT * FROM '240modular_content' WHERE 'name' = '". $title . "' LIMIT 1";
+    $sql = "SELECT * FROM '240modular_content' WHERE 'name' = '" . $title . " LIMIT 1";
     
     $result = $conn->query($sql);
 
