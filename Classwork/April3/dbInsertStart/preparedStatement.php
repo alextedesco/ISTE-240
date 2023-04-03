@@ -2,8 +2,28 @@
 /**
  * Connect to the database.
  */
-
 include ('../dbcon.php');
+
+if (!empty( $_GET['fName'] )  && !empty( $_GET['lName'] )) {
+	$fname = $_GET['fName'];
+	$lname = $_GET['lName'];
+
+	// $sql = "INSERT INTO `240Insert` (`first`, `last`) VALUES ('" . $fname . "', '" . $lname . "');";
+
+	// $conn->query($sql);
+
+	// // $conn->execute();
+	// // echo $sql;
+
+	$stmt = $conn->prepare("INSERT INTO `240Insert` (`first`, `last`) VALUES (?, ?);");
+	$stmt->bind_param("ss", $fname, $lname);
+	$stmt->execute();
+	$stmt->close();
+
+	$conn->close();
+}
+
+
 
 $sql = "SELECT * FROM `240Insert` ORDER BY `id` LIMIT 50";
 
@@ -43,6 +63,7 @@ while ($row = $result->fetch_assoc() ) {
 		<form action="preparedStatement.php" method="get">		
 			First name: <input type="text" id="first" name="fName" />
 			Last name: <input type="text" id="last" name="lName"/>
+			<input type="hidden" name="task" value="submitname"/>
 			<input type="submit" value="Add to the List"/>
 		</form>
 	</body>
