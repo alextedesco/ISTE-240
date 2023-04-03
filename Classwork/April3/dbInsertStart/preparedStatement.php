@@ -2,6 +2,22 @@
 /**
  * Connect to the database.
  */
+
+include ('../dbcon.php');
+
+$sql = "SELECT * FROM `240Insert` ORDER BY `id` LIMIT 50";
+
+$result = $conn->query($sql);
+
+// $names = new Array 
+while ($row = $result->fetch_assoc() ) {
+	// echo $row['first'] . " " . echo $row['last'];
+	$records[] = $row;
+}
+
+//  Insert
+
+
  
 ?>
 <!DOCTYPE html>
@@ -16,6 +32,9 @@
 			<ul>
 			<?php
 				//will use for output
+				foreach ($records as $record) {
+					echo "<li>" . $record['first'] . " " . $record['last'] . "</li>";
+				}
 			?>
 			</ul>
 		</div>
