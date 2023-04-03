@@ -9,16 +9,16 @@
 
     include($path.'../dbcon.php');
 
-    $sql = "SELECT * FROM '240modular_content' WHERE 'name' = '" . $title . " LIMIT 1";
+    $sql = "SELECT * FROM `240modular_content` WHERE `name` = '" . $title . "' LIMIT 1";
     
     $result = $conn->query($sql);
+
+    echo $sql;
 
     while ($row = $result->fetch_assoc()) {
         echo $row['content'];
     }
 ?>
-				<h1>Home page stuff...</h1> 
-				<div>(eventually, each page will be some includes and a db call only!)</div>
 <?php
-    include('assets/inc/footer.php');
+    include($path.'assets/inc/footer.php');
 ?>

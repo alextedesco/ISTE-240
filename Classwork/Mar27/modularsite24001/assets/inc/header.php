@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title><?php echo $name; ?></title>
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/nav.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
+	<title><?php echo $title; ?></title>
+    <link href="<?php echo $path;?>assets/css/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo $path;?>assets/css/nav.css" rel="stylesheet">
+    <link href="<?php echo $path;?>assets/css/style.css" rel="stylesheet">
 </head>
 <body>
 <header id="top"> 
 	<div id="toptext">
-		<?php echo $name; ?>
+		<?php echo $title; ?>
 	</div> 
 </header> 
 <section id="maincontainer"> 
