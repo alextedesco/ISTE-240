@@ -20,7 +20,7 @@ if (!empty( $_GET['fName'] )  && !empty( $_GET['lName'] )) {
 	$stmt->execute();
 	$stmt->close();
 
-	$conn->close();
+	// $conn->close();
 }
 
 
