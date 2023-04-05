@@ -1,5 +1,32 @@
 <?php
 
+	include ("../dbcon.php");
+
+	if (!empty($_POST['uname']) && !empty($_POST['pass']) && !empty($_POST['pass2'] )) {
+		// die ("OK to submit ");
+		// echo "Inside the if";
+		if (!passMatch()) {
+			die("Passwords don't match! Press back to re-enter!");
+		}
+
+		$uname = $_POST['uname'];
+		$pass = password_hash($_POST['pass'], PASSWORD_DEFAULT);
+
+		$sql = "INSERT INTO `240Login` (`uname`, `pass`) VALUES (?, ?);";
+
+		$stmt = $conn->prepare($sql);
+		$stmt->bind_param("ss", $uname, $pass);
+		$stmt->execute();
+
+		$stmt->close();
+		$conn->close();
+
+		die ("Successfully Inserted!");
+
+	}
+
+
+
 	function passMatch(){
 		if(strcmp($_POST['pass'],$_POST['pass2'])==0){
 			return true;

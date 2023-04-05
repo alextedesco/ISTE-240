@@ -1,4 +1,23 @@
 <?php
+	include ("../dbcon.php");
+
+	if (!empty ($_POST['uname']) && !empty($_POST['pass'])) {
+
+		$sql = "SELECT * FROM `240Login` WHERE `uname` = ? LIMIT 1";
+		$stmt = $conn->prepare($sql);
+		$stmt->bind_param("s", $_POST['uname']);
+		$stmt->execute();
+		$results = $stmt->get_result();
+
+		while ($row = $results->fetch_assoc()) {
+			if (password_verify($_POST['pass'],$row['pass'])) {
+				die ("You have been authenticated");
+			} else {
+				die ("Invalid username or password!");
+			}
+		}
+		echo "CHECK";
+	}
 	
 ?>
 <!DOCTYPE html>
