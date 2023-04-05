@@ -1,6 +1,11 @@
 <?php
+	session_name("act2076_demo");
+	session_start();
 
-	
+	if (!$_SESSION['login']) {
+		die ("Not authorized")
+	}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

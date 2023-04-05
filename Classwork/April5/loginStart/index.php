@@ -1,5 +1,10 @@
 <?php
+
+	$page = "TEST";	
 	include ("../dbcon.php");
+
+	session_name("act2076_demo");
+	session_start();
 
 	if (!empty ($_POST['uname']) && !empty($_POST['pass'])) {
 
@@ -11,12 +16,15 @@
 
 		while ($row = $results->fetch_assoc()) {
 			if (password_verify($_POST['pass'],$row['pass'])) {
-				die ("You have been authenticated");
+				// die ("You have been authenticated");
+				$_SESSION['name'] = $_POST['uname'];
+				$_SESSION['login'] = true;
+
+				header("Location: page.php");
 			} else {
 				die ("Invalid username or password!");
 			}
 		}
-		echo "CHECK";
 	}
 	
 ?>
