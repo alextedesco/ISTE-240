@@ -1,64 +1,71 @@
-<?php 
+<?php
 
-	function santize ($str, $length=50) {
+	include("validations.php");
+
+	
+	function sanitize($str,$length=50 ){
+		$str = strip_tags($str);
 		$str = trim($str);
-		$str = htmllentities($str);
-		return substr($str, 0, $length);
-
-		// return $str;
-
+		$str = htmlentities($str);
+		return substr($str,0,$length);
 
 	}
 
-	if (!empty($_POST['fname'])) {
+	if( !empty(  $_POST['fname']  )  ){
+		/*
+		$fname = sanitize($_POST['fname']);
+		$date = sanitize($_POST['date']);
+		$email = sanitize($_POST['email']);
+		*/
 
-		
-		$fname = $_POST['fname'];
-		$fname = santize($fname);
+		$fname = filter_var($_POST['fname'], FILTER_SANITIZE_STRING);
+		$date = filter_var($_POST['date'], FILTER_SANITIZE_STRING);
+		$email  = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
 
-		$email = $_POST['email'];
-		$email = santize($email);
+		$oktosubmit = true;
 
-		$date = $_POST['date'];
-		$date = santize($date);
-
-		if (emailCheck($email)) {
-			echo "Email looks good";
-		} else {
-			echo "Email looks bad";
+		if(date1($date)){
+			
+			echo "<br>Valid Date<br>";
+		}else{
+			$oktosubmit = false;
+			echo "<br>Invalid Date<br>";
 		}
 
-		// $email = filter_var($email,)
-
-		if ()
-
-		if (date1($date)) {
-
-			echo "<br/>valid date";
-
-			$newdate = strtotime($date);
-
-			$newdate = date("Ymd", $newdate);
-
-			echo "new date" . $newdate;
-
-
-
+		if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+			echo "<br>Valid Email<br>";
+		}else{
+			$oktosubmit = false;
+			echo "<br>Invalid Email<br>";
 		}
 
-		// $sql = "INSERT into (whaterver) and values ("..") ";
+		/*
+		if(emailCheck($email)){
 
-		echo $fname . "<br/>" . $email;
+			echo "<br>Valid Email<br>";
+		}else{
+			$oktosubmit = false;
+			echo "<br>Invalid Email<br>";
+		}
+		*/
 
-	} else {
-		echo "problem with data";
+		if($oktosubmit){
+			// a valid insert looks like this: INSERT INTO `testdate` (`name`, `date`) VALUES ('Testbob2', '20201122');
+			$new_time = strtotime($date);
+			$new_time = date("Ymd",$new_time);
+			echo "<br/>FORMATTED DATE:". $new_time . "<br/>";
+			
+			$sql = "INSERT INTO `testdate` (`name`, `date`) VALUES ('".$fname."', '".$new_time."');";
+			echo "<br/>" . $sql;
+		}
+		//echo $fname . " | " . $date . " | " . $email;
 	}
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset=utf-8" />
+	<meta charset="utf-8" />
 	<title>Clean input</title>
  	<style type="text/css">
  		form div{margin: 1em;}
@@ -69,28 +76,27 @@
 </head>
 <body>
 	<script>
-		function validate () {
-			if (document.forms[0].fname.value == "") {
-				alert("You forgot the name");
+		function validate(){
+			// do your checks
+			if( document.forms[0].fname.value == ""  ){
+				alert("Missing firstname");
 				return false;
-
 			}
-			return false;
-
+			
 		}
 	</script>
-	<form name="testform" action = "<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" onsubmit="return false">
+	<form name="comment" action = "<?php echo $_SERVER['PHP_SELF']; ?>" method="POST"  onsubmit="return validate()"  >
 		<div>
 			<label>First Name:</label>
-			<input type="text" name="fname" size="30" />
+			<input type="text" name="fname" size="30"  />
 		</div>
 		<div>
-			<label>Date:</label> (mm/dd/yyyy)
-			<input type="text" name="date" size="30" />
+			<label>Date:</label>
+			<input type="text" name="date" size="30" /> mm/dd/yyyy
 		</div>
 		<div>
 			<label>Email:</label>
-			<input type="text" name="email" size="30" />
+			<input type="text" name="email" size="30"  />
 		</div>
 		<div class="clearfix">
 			<input type="reset" value="Reset Form" />
