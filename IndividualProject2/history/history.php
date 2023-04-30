@@ -5,36 +5,18 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
-    <!-- Sets the favicon to the Gatlinburg logo -->
-    <link rel="icon" type="image/x-icon" href="../assets/gatlinburg-logo.png">
+<?php
+    include ("../inc/header.php");
+?>
     <title>History</title>
 </head>
 
 <body>
     <!-- Container for nav, iframe, and form -->
     <div class="container">
-        <!-- Wraps the nav into an introductory section -->
-        <header>
-            <!-- Navigation element for containing all subpages (list elements) -->
-            <nav>
-                <!-- Gatlinburg Logo -->
-                <img src="../assets/gatlinburg-logo.png" alt="Logo of Gatlinburg, Tennessee">
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li class="seperator">|</li>
-                    <li><a href="../sights/sights.html">Sights</a></li>
-                    <li class="seperator">|</li>
-                    <li><a href="../restaurants/restaurants.html">Restaurants</a></li>
-                    <li class="seperator">|</li>
-                    <li><a href="#">History</a></li>
-                </ul>
-            </nav>
-        </header>
+        <?php
+          include ("../inc/nav.php");
+        ?>
 
         <span>
             <h1><a href="nativeamerican/nativeamerican.html">Cherokee Native American Land</a></h1>

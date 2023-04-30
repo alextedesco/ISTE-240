@@ -18,23 +18,9 @@
 <body>
     <!-- Container for nav, iframe, and form -->
     <div class="container">
-        <!-- Wraps the nav into an introductory section -->
-        <header>
-            <!-- Navigation element for containing all subpages (list elements) -->
-            <nav>
-                <!-- Gatlinburg Logo -->
-                <img src="../assets/gatlinburg-logo.png" alt="Logo of Gatlinburg, Tennessee">
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li class="seperator">|</li>
-                    <li><a href="../sights/sights.html">Sights</a></li>
-                    <li class="seperator">|</li>
-                    <li><a href="#">Restaurants</a></li>
-                    <li class="seperator">|</li>
-                    <li><a href="../history/history.html">History</a></li>
-                </ul>
-            </nav>
-        </header>
+        <?php
+          include ("../inc/nav.php");
+        ?>
 
         <span>
             <h1>Breakfast/Coffee</h1>
