@@ -9,7 +9,11 @@ $current_url = basename($_SERVER['REQUEST_URI']);
     <!-- Gatlinburg Logo -->
     <img src="http://solace.ist.rit.edu/~act2076/ISTE240/IndividualProjects/Project2/assets/gatlinburg-logo.png" alt="Logo of Gatlinburg, Tennessee">
     <ul>
-      <li><a href="#">Home</a></li>
+      <li><a <?php if ($current_url == "index.php") {
+                echo 'href="#"'; 
+              } else {
+                echo 'href="http://solace.ist.rit.edu/~act2076/ISTE240/IndividualProjects/Project2/index.php"';
+              }?>>Home</a></li>
       <li class="seperator">|</li>
       <li>
         <a <?php if ($current_url == "sights.php") {

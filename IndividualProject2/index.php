@@ -3,18 +3,15 @@
 <!-- Individual Project 1 -->
 
 <?php
+    $title = "Homepage";
+    $cssPath = "css/styles.css";
+    $faviconPath = "assets/gatlinburg-logo.png";
     include ("inc/header.php");
 ?>
-    <title>Homepage</title>
-</head>
 
-<body>
-    <!-- Container for nav, iframe, and form -->
-    <div class="container">
-        <!-- Wraps the nav into an introductory section -->
-        <?php
-          include ("inc/nav.php");
-        ?>
+<?php
+    include ("inc/nav.php");
+?>
         <span class="intro">
             <h1>Gatlinburg, Tennessee</h1>
             <p>Gatlinburg, a mountain town in eastern Tennessee, is known as a gateway to the roughly 520,000-acre Great

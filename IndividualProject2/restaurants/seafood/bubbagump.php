@@ -2,25 +2,16 @@
 <!-- ISTE-240 -->
 <!-- Individual Project 1 -->
 
-<!DOCTYPE html>
-<html lang="en">
+<?php
+    $title = "Bubba Gump Shrimp Company";
+    $cssPath = "../../css/styles.css";
+    $faviconPath = "../../assets/gatlinburg-logo.png";
+    include ("../../inc/header.php");
+?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/styles.css">
-    <!-- Sets the favicon to the Gatlinburg logo -->
-    <link rel="icon" type="image/x-icon" href="../../assets/gatlinburg-logo.png">
-    <title>Bubba Gump Shrimp Company</title>
-</head>
-
-<body>
-    <!-- Container for nav, iframe, and form -->
-    <div class="container">
-        <?php
-            include ("../../inc/nav.php");
-        ?>
+<?php
+    include ("../../inc/nav.php");
+?>
 
         <span>
             <h1>History</h1>
