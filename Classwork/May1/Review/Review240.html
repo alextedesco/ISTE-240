@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        .navcontainer {
+            display: flex;
+            background:lightblue;
+            justify-content: space-around;
+        }
+
+        @media only screen and (max-width:500px) {
+            .navcontainer {
+                flex-direction: column;
+            }
+
+            vl.nav {
+
+            }
+
+        }
+    </style>
+
+    <div class="navcontainer">
+        <div class="item">Home</div>
+        <div class="item">About</div>
+        <div class="item">Contact</div>
+    </div>
+
+    <script>
+        function validate() {
+            if (document.getElementById("first").value == "") {
+                alert("you missed something");
+            }
+
+            return false;
+        }
+
+        function add () {
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            console.log(num1);
+            var result = parseInt(num1) + parseInt(num2);
+            if (num1 == "" || num2 == "") {
+                alert ("Enter values to add");
+            } else {
+                document.getElementById("result").innerHTML = result;
+            }
+        }
+    </script>
+
+    <form method="GET" onsubmit="return validate()">
+
+        First Name: <input type="text" name="first" id="first"/>
+        </br>
+        <input type="submit"/>
+    </form>
+
+
+    <input type="text" name="num1" id="num1"/> +
+    <input type="text" name="num2" id="num2"/> =
+    <p id="result"></p>
+    <br/>
+    <button onclick="add()">Calculuate</button>
+
+    
+
+    
+</body>
+</html>

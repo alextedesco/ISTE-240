@@ -153,11 +153,37 @@ $current_url = basename($_SERVER['REQUEST_URI']);
       </li>
       <li class="seperator">|</li>
       <li>
-        <a href="#">History</a>
+        <a <?php if ($current_url == "history.php") {
+                echo 'href="#"'; 
+              } else {
+                echo 'href="http://solace.ist.rit.edu/~act2076/ISTE240/IndividualProjects/Project2/history/history.php"';
+              }?>>History</a>
         <ul>
-          <li><a href="#">Historical Sites</a></li>
-          <li><a href="#">Museums</a></li>
-          <li><a href="#">Heritage Tours</a></li>
+          <li>
+            <a href="#">Fires</a>
+              <ul>
+                <li><a <?php if ($current_url == "fires_1992.php") {
+                echo 'href="#"'; 
+              } else {
+                echo 'href="http://solace.ist.rit.edu/~act2076/ISTE240/IndividualProjects/Project2/history/fires/fires_1992.php"';
+              }?>>Fires of 1992</a></li>
+                <li><a <?php if ($current_url == "fires_2016.php") {
+                echo 'href="#"'; 
+              } else {
+                echo 'href="http://solace.ist.rit.edu/~act2076/ISTE240/IndividualProjects/Project2/history/fires/fires_2016.php"';
+              }?>>Fires of 2016</a></li>
+              </ul>
+          </li>
+          <li><a <?php if ($current_url == "civilwar.php") {
+                echo 'href="#"'; 
+              } else {
+                echo 'href="http://solace.ist.rit.edu/~act2076/ISTE240/IndividualProjects/Project2/history/civilwar/civilwar.php"';
+              }?>>Civil War</a></li>
+          <li><a <?php if ($current_url == "nativeamerican.php") {
+                echo 'href="#"'; 
+              } else {
+                echo 'href="http://solace.ist.rit.edu/~act2076/ISTE240/IndividualProjects/Project2/history/nativeamerican/nativeamerican.php"';
+              }?>>Native Americans</a></li>
         </ul>
       </li>
     </ul>

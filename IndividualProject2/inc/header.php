@@ -1,7 +1,3 @@
-<?php
- $curr = getcwd();
- echo $curr;
- ?>
 <!DOCTYPE html>
 <html lang="en">
 
