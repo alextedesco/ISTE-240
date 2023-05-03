@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script src="js/script.js"></script>
+    <title>The Raven Practice</title>
+</head>
+<body>
+
+    <h1>The Raven</h1>
+    <h2>By Edward Allen Poe</h2>
+    <div class="columns">
+    <p>Once upon a midnight dreary, while I pondered, weak and weary,
+
+        Over many a quaint and curious volume of forgotten lore,
+        
+        While I nodded, nearly napping, suddenly there came a tapping,
+        
+        As of some one gently rapping, rapping at my chamber door.
+        
+        "'Tis some visiter," I muttered, "tapping at my chamber door --
+        
+                                 Only this, and nothing more."
+    </p>
+    
+    <p>Ah, distinctly I remember it was in the bleak December,
+
+        And each separate dying ember wrought its ghost upon the floor.
+        
+        Eagerly I wished the morrow; -- vainly I had sought to borrow
+        
+        From my books surcease of sorrow -- sorrow for the lost Lenore --
+        
+        For the rare and radiant maiden whom the angels name Lenore --
+        
+                                 Nameless here for evermore.
+    </p>
+    <p>And the silken sad uncertain rustling of each purple curtain
+
+        Thrilled me -- filled me with fantastic terrors never felt before;
+        
+        So that now, to still the beating of my heart, I stood repeating
+        
+        "'Tis some visiter entreating entrance at my chamber door --
+        
+        Some late visiter entreating entrance at my chamber door; --
+        
+                                 This it is, and nothing more."</p>
+
+    <p>Presently my soul grew stronger; hesitating then no longer,
+
+        "Sir," said I, "or Madam, truly your forgiveness I implore;
+        
+        But the fact is I was napping, and so gently you came rapping,
+        
+        And so faintly you came tapping, tapping at my chamber door,
+        
+        That I scarce was sure I heard you " -- here I opened wide the door; ----
+        
+                                 Darkness there and nothing more.</p>
+    <div class="center">
+    <img src="images/raven1.jpg">
+    <h3>Alex Tedesco</h3>
+    </div>
+
+    <p>Deep into that darkness peering, long I stood there wondering, fearing,
+
+        Doubting, dreaming dreams no mortal ever dared to dream before;
+        
+        But the silence was unbroken, and the darkness gave no token,
+        
+        And the only word there spoken was the whispered word, "Lenore!"
+        
+        This I whispered, and an echo murmured back the word, "Lenore!" --
+        
+                                 Merely this, and nothing more.</p>
+    
+    <p>Open here I flung the shutter, when, with many a flirt and flutter,
+
+        In there stepped a stately raven of the saintly days of yore;
+        
+        Not the least obeisance made he; not an instant stopped or stayed he;
+        
+        But, with mien of lord or lady, perched above my chamber door --
+        
+        Perched upon a bust of Pallas just above my chamber door --
+        
+                                 Perched, and sat, and nothing more.</p>
+
+    <span style="color:blue;font-style: italic;">
+    <p>And the raven, never flitting, still is sitting, still is sitting
+
+        On the pallid bust of Pallas just above my chamber door;
+        
+        And his eyes have all the seeming of a demon's that is dreaming,
+        
+        And the lamp-light o'er him streaming throws his shadow on the floor;
+        
+        And my soul from out that shadow that lies floating on the floor
+        
+                                 Shall be lifted -- nevermore!
+        </p>
+    </span>
+    <a id="theEnd" onclick="yesForm()">The End</a>
+    <br/>
+    <a id="noForm" onclick="noForm()">No Form</a>
+    <form class="form" action="index.html" method="post">
+        <p>Is the Raven scary?</p>
+        <input type="radio" name="yesNo" value="Yes">Yes
+        <br>
+        <input type="radio" name="yesNo" value="No">No
+        </br>
+        Your Name: <input type="text" name="name" value="Enter your name">
+        <input type="submit"  name="Submit"  value="Send Form" onclick="isEmpty()"/>
+    </form>
+    </div>
+
+    <script>
+        function isEmpty () {
+            var radios = document.getElementsByName('yesNo');
+
+            for (var i = 0, length = radios.length; i < length; i++) {
+                if (radios[i].checked) {
+                    var isScary = radios[i];
+                    console.log(isScary);
+            alert("Please select yes or no!");
+
+  }
+
+        //     if (!empty( $_GET['fName'] )  && !empty( $_GET['lName'] )) {
+	    //     $fname = $_GET['fName'];
+	    //     $lname = $_GET['lName'];
+        // }
+    }
+}
+        
+    </script>
+</body>
+</html>
