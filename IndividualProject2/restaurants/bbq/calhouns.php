@@ -5,6 +5,7 @@
 <?php
     $title = "Calhoun's BBQ";
     $cssPath = "../../assets/css/styles.css";
+    $jsPath = "../../assets/js/script.js";
     $faviconPath = "../../assets/images/gatlinburg-logo.png";
     include ("../../assets/inc/header.php");
     include ("../../assets/inc/nav.php");
@@ -46,8 +47,6 @@
             <a href="../../assets/images/calhouns_menu.pdf"><img class="menu" src="../../assets/images/calhouns_menu.jpg"></a>
         </span>
 
-    </div>
-
-</body>
-
-</html>
+<?php
+include ("../../assets/inc/footer.php");
+?>

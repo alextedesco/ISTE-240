@@ -5,6 +5,7 @@
 <?php
     $title = "Titanic Museum";
     $cssPath = "../../assets/css/styles.css";
+    $jsPath = "../../assets/js/script.js";
     $faviconPath = "../../assets/images/gatlinburg-logo.png";
     include ("../../assets/inc/header.php");
     include ("../../assets/inc/nav.php");
@@ -47,9 +48,6 @@
             <h1>Interior</h1>
             <a href="../../assets/images/titanic2.webp"><img class="menu" src="../../assets/images/titanic2.webp"></a>
         </span>
-
-    </div>
-
-</body>
-
-</html>
+<?php
+include ("../../assets/inc/footer.php");
+?>

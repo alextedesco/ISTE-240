@@ -5,6 +5,7 @@
 <?php
     $title = "Civil War";
     $cssPath = "../../assets/css/styles.css";
+    $jsPath = "../../assets/js/script.js";
     $faviconPath = "../../assets/images/gatlinburg-logo.png";
     include ("../../assets/inc/header.php");
     include ("../../assets/inc/nav.php");
@@ -27,8 +28,6 @@
             <img src="../../assets/images/civilwar.jpg">
         </span>
 
-    </div>
-
-</body>
-
-</html>
+<?php
+include ("../../assets/inc/footer.php");
+?>

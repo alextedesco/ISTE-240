@@ -5,6 +5,7 @@
 <?php
     $title = "Restaurants";
     $cssPath = "../assets/css/styles.css";
+    $jsPath = "../assets/js/script.js";
     $faviconPath = "../assets/images/gatlinburg-logo.png";
     include ("../../assets/inc/header.php");
     include ("../../assets/inc/nav.php");
@@ -42,8 +43,6 @@
             </p>
         </span>
 
-    </div>
-
-</body>
-
-</html>
+<?php
+include ("../assets/inc/footer.php");
+?>
