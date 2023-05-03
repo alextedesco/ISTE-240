@@ -1,0 +1,82 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto 0 auto;
+    width: 90%;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    margin: 0;
+}
+
+nav {
+    display: inline-block;
+    width: 98%;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    top: 30px;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    justify-content: space-around;
+    background-color: grey;
+    position: relative;
+    text-align: center;
+}
+
+nav li {
+    padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    nav ul { 
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+li:hover {
+    background-color: forestgreen;
+    border-radius: 5px;
+    opacity: .75;
+}
+
+a {
+    color: yellow;
+    text-decoration: underline;
+}
+
+section h2 {
+    position: absolute;
+    left: 5px;
+    top: 340px;
+    background: orange;
+    border: 2px solid white;
+    margin: auto;
+}
+
+/* section {
+    display: inline-flex;
+} */
+
