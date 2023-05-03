@@ -1,30 +1,18 @@
 <!-- Alex Tedesco -->
 <!-- ISTE-240 -->
-<!-- Individual Project 1 -->
+<!-- Individual Project 2 -->
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/styles.css">
-    <!-- Sets the favicon to the Gatlinburg logo -->
-    <link rel="icon" type="image/x-icon" href="../../assets/gatlinburg-logo.png">
-    <title>Hollywood Star Car Museum</title>
-</head>
-
-<body>
-    <!-- Container for nav, iframe, and form -->
-    <div class="container">
-        <?php
-          include ("../../inc/nav.php");
-        ?>
+<?php
+    $title = "Hollywood Star Car Museum";
+    $cssPath = "../../assets/css/styles.css";
+    $faviconPath = "../../assets/images/gatlinburg-logo.png";
+    include ("../../assets/inc/header.php");
+    include ("../../assets/inc/nav.php");
+?>
 
         <span>
             <h1>Hollywood Star Car Museum</h1>
-            <img src="../../assets/starcarmuseum.webp">
+            <img src="../../assets/images/starcarmuseum.webp">
 
             <p>
                 The Hollywood Star Car Museum features the best Hollywood movie & TV cars in recreated settings 
@@ -38,9 +26,9 @@
         <span>
             <h1>Hours</h1>
             <br>
-            <img src="../../assets/open.gif">
+            <img id="open-closed-image" src="">
             
-            <ul class="hours">
+            <ul id="opening-hours">
                 <li>Sunday: 9AM - 9PM</li>
                 <li>Monday: 9AM - 9PM</li>
                 <li>Tuesday: 9AM - 9PM</li>
@@ -51,12 +39,14 @@
             </ul>
         </span>
 
+        <?php include ("../../assets/inc/openClosed.php");?>
+
         <hr>
 
         <span class="interior">
             <h1>Interior</h1>
-            <a href="../../assets/starcars1.jpg"><img class="menu" src="../../assets/starcars1.jpg"></a>
-            <a href="../../assets/starcars2.jpg"><img class="menu" src="../../assets/starcars2.jpg"></a>
+            <a href="../../assets/images/starcars1.jpg"><img class="menu" src="../../assets/images/starcars1.jpg"></a>
+            <a href="../../assets/images/starcars2.jpg"><img class="menu" src="../../assets/images/starcars2.jpg"></a>
         </span>
 
     </div>

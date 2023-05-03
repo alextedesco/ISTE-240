@@ -1,30 +1,18 @@
 <!-- Alex Tedesco -->
 <!-- ISTE-240 -->
-<!-- Individual Project 1 -->
+<!-- Individual Project 2 -->
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/styles.css">
-    <!-- Sets the favicon to the Gatlinburg logo -->
-    <link rel="icon" type="image/x-icon" href="../../assets/gatlinburg-logo.png">
-    <title>Dollywood</title>
-</head>
-
-<body>
-    <!-- Container for nav, iframe, and form -->
-    <div class="container">
-        <?php
-          include ("../../inc/nav.php");
-        ?>
+<?php
+    $title = "Dollywood";
+    $cssPath = "../../assets/css/styles.css";
+    $faviconPath = "../../assets/images/gatlinburg-logo.png";
+    include ("../../assets/inc/header.php");
+    include ("../../assets/inc/nav.php");
+?>
 
         <span>
             <h1>Dollywood</h1>
-            <img src="../../assets/dollywood.jpg">
+            <img src="../../assets/images/dollywood.jpg">
 
             <p>
                 Dollywood is a theme park jointly owned by entertainer Dolly Parton and Herschend Family Entertainment. 
@@ -38,17 +26,20 @@
         <span>
             <h1>Hours</h1>
             <br>
-            <img src="../../assets/open.gif">            
+            <img id="open-closed-image" src="">            
             <h2>Theme Park:</h2>
-            <ul>
-                <li>Sunday: 10AM - 9:30PM</li>
-                <li>Monday: 10AM - 9:30PM</li>
-                <li>Tuesday: 10AM - 9:30PMM</li>
-                <li>Wednesday: 10AM - 9:30PM</li>
-                <li>Thursday: 10AM - 9:30PM</li>
-                <li>Friday: 10AM - 9:30PM</li>
-                <li>Saturday: 10AM - 9:30PM</li>
+            <ul id="opening-hours">
+                <li>Sunday: 10AM - 9PM</li>
+                <li>Monday: 10AM - 9PM</li>
+                <li>Tuesday: 10AM - 9PM</li>
+                <li>Wednesday: 10AM - 9PM</li>
+                <li>Thursday: 10AM - 9PM</li>
+                <li>Friday: 10AM - 9PM</li>
+                <li>Saturday: 10AM - 9PM</li>
             </ul>
+
+            <?php include ("../../assets/inc/openClosed.php");?>
+
             <h2>Water Park:</h2>
             <ul>
                 <li>Sunday: 10AM - 7PM</li>

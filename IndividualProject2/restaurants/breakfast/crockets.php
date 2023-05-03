@@ -1,30 +1,18 @@
 <!-- Alex Tedesco -->
 <!-- ISTE-240 -->
-<!-- Individual Project 1 -->
+<!-- Individual Project 2 -->
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/styles.css">
-    <!-- Sets the favicon to the Gatlinburg logo -->
-    <link rel="icon" type="image/x-icon" href="../../assets/gatlinburg-logo.png">
-    <title>Crockett's Breakfast Camp</title>
-</head>
-
-<body>
-    <!-- Container for nav, iframe, and form -->
-    <div class="container">
-        <?php
-          include ("../../inc/nav.php");
-        ?>
+<?php
+    $title = "Crockett;s Breakfast Camp";
+    $cssPath = "../../assets/css/styles.css";
+    $faviconPath = "../../assets/images/gatlinburg-logo.png";
+    include ("../../assets/inc/header.php");
+    include ("../../assets/inc/nav.php");
+?>
 
         <span>
             <h1>History</h1>
-            <img src="../../assets/crocketts.jpg">
+            <img src="../../assets/images/crocketts.jpg">
 
             <p>
                 Crockett's Breakfast Camp opened in 1875 after honored soldier David C. Crockett returned home to his wife in Gatlinburg. 
@@ -37,7 +25,7 @@
 
         <span>
             <h1>Reviews</h1>
-            <img src="../../assets/crocketts_food.jpg">
+            <img src="../../assets/images/crocketts_food.jpg">
             
             <p>
                Crockett's currently has 4.7 stars out of 5 on Google Reviews on 7,169 reviews. Many praise its 
@@ -51,7 +39,7 @@
 
         <span>
             <h1>Menu</h1>
-            <a href="../../assets/crocketts_menu.jpg"><img class="menu" src="../../assets/crocketts_menu.jpg"></a>
+            <a href="../../assets/images/crocketts_menu.jpg"><img class="menu" src="../../assets/images/crocketts_menu.jpg"></a>
         </span>
 
     </div>

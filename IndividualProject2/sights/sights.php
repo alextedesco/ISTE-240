@@ -1,25 +1,18 @@
 <!-- Alex Tedesco -->
 <!-- ISTE-240 -->
-<!-- Individual Project 1 -->
+<!-- Individual Project 2 -->
 
 <?php
     $title = "Sights";
-    $cssPath = "../css/styles.css";
-    $faviconPath = "../assets/gatlinburg-logo.png";
-    include ("../inc/header.php");
+    $cssPath = "../assets/css/styles.css";
+    $faviconPath = "../assets/images/gatlinburg-logo.png";
+    include ("../assets/inc/header.php");
+    include ("../assets/inc/nav.php");
 ?>
-</head>
-
-<body>
-    <!-- Container for nav, iframe, and form -->
-    <div class="container">
-        <?php
-            include ("../inc/nav.php");
-        ?>
 
         <span>
             <h1>Museums</h1>
-            <img src="../assets/museum.jpg">
+            <img src="../assets/images/museum.jpg">
 
             <p>
                 Gatlinburg is home to many acclaimed museum that are a must see on any vacation. These museums include 
@@ -32,7 +25,7 @@
 
         <span>
             <h1>Scenery</h1>
-            <img src="../assets/scenery.jpg">
+            <img src="../assets/images/scenery.jpg">
             <p>
                Gatlinburg is one of the most beautiful places in the United States with <a href="scenery/smokey_mountains_park.html">Great Smokey Mountains National Park</a>, 
                the <a href="scenery/skybridge.html">Gatlinburg Skybridge</a>, and the <a href="scenery/roaring_fork.html">Roaring Fork</a>
@@ -43,7 +36,7 @@
 
         <span>
             <h1>Fun</h1>
-            <img src="../assets/fun.webp">
+            <img src="../assets/images/fun.webp">
             <p>Gatlinburg is a key spot for any family vacation and of course that means fun the entire family. Some of the favorites for 
                 in Gatlinburg include <a href="fun/dollywood.html">Dollywood</a>, the <a href="fun/convention_center.html">Gatlinburg Convention Center</a>, 
             <a href="fun/beyond_the_lens.html">Beyond The Lens</a>, and <a href="fun/civil_war_theater.html">Buttonwillow Civil War Theater</a>

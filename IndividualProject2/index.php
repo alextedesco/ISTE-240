@@ -1,16 +1,13 @@
 <!-- Alex Tedesco -->
 <!-- ISTE-240 -->
-<!-- Individual Project 1 -->
+<!-- Individual Project 2 -->
 
 <?php
     $title = "Homepage";
-    $cssPath = "css/styles.css";
-    $faviconPath = "assets/gatlinburg-logo.png";
-    include ("inc/header.php");
-?>
-
-<?php
-    include ("inc/nav.php");
+    $cssPath = "assets/css/styles.css";
+    $faviconPath = "assets/images/gatlinburg-logo.png";
+    include ("assets/inc/header.php");
+    include ("assets/inc/nav.php");
 ?>
         <span class="intro">
             <h1>Gatlinburg, Tennessee</h1>
@@ -19,7 +16,7 @@
                 including the 407-ft. Space Needle observation tower and the Sky Lift, a 2.1-mile aerial cable car that
                 journeys from Downtown to the popular amusement park and ski resort Ober Gatlinburg.
             </p>
-            <img src="assets/cover.jpg">
+            <img src="assets/images/cover.jpg">
         </span>
 
         <h1 class="visit">Please tell us about visit:</h1>

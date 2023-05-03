@@ -24,7 +24,7 @@
 
         <span>
             <h1>History</h1>
-            <img src="../../assets/hungrybear.jpg">
+            <img src="../../assets/images/hungrybear.jpg">
 
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore at similique, doloribus, sit quis rem aspernatur amet rerum dolore, aut explicabo magnam non. Deserunt quis, ab magni corporis voluptatibus ut!
@@ -35,7 +35,7 @@
 
         <span>
             <h1>Reviews</h1>
-            <img src="../../assets/hungrybear_food.jpg">
+            <img src="../../assets/images/hungrybear_food.jpg">
 
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla vitae quibusdam officia. Esse voluptatibus libero, reiciendis voluptatum sequi optio, recusandae voluptatem soluta beatae qui fuga distinctio tempore repellendus vitae iure.
@@ -47,7 +47,7 @@
 
         <span>
             <h1>Menu</h1>
-            <a href="../../assets/hungrybear_menu.png"><img class="menu" src="../../assets/hungrybear_menu.png"></a>
+            <a href="../../assets/images/hungrybear_menu.png"><img class="menu" src="../../assets/images/hungrybear_menu.png"></a>
         </span>
 
     </div>

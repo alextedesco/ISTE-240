@@ -1,30 +1,18 @@
 <!-- Alex Tedesco -->
 <!-- ISTE-240 -->
-<!-- Individual Project 1 -->
+<!-- Individual Project 2 -->
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/styles.css">
-    <!-- Sets the favicon to the Gatlinburg logo -->
-    <link rel="icon" type="image/x-icon" href="../../assets/gatlinburg-logo.png">
-    <title>Titanic Museum</title>
-</head>
-
-<body>
-    <!-- Container for nav, iframe, and form -->
-    <div class="container">
-        <?php
-          include ("../../inc/nav.php");
-        ?>
+<?php
+    $title = "Titanic Museum";
+    $cssPath = "../../assets/css/styles.css";
+    $faviconPath = "../../assets/images/gatlinburg-logo.png";
+    include ("../../assets/inc/header.php");
+    include ("../../assets/inc/nav.php");
+?>
 
         <span>
             <h1>Titanic Mueseum</h1>
-            <img src="../../assets/titanic.jpg">
+            <img src="../../assets/images/titanic.jpg">
 
             <p>
                 The Titanic Museum is a two-story museum shaped like the RMS Titanic.
@@ -38,9 +26,9 @@
         <span>
             <h1>Hours</h1>
             <br>
-            <img src="../../assets/open.gif">
+            <img id="open-closed-image" src="">
             
-            <ul class="hours">
+            <ul id="opening-hours">
                 <li>Sunday: 9AM - 8PM</li>
                 <li>Monday: 9AM - 5PM</li>
                 <li>Tuesday: 9AM - 5PM</li>
@@ -51,11 +39,13 @@
             </ul>
         </span>
 
+        <?php include ("../../assets/inc/openClosed.php");?>
+
         <hr>
 
         <span class="interior">
             <h1>Interior</h1>
-            <a href="../../assets/titanic2.webp"><img class="menu" src="../../assets/titanic2.webp"></a>
+            <a href="../../assets/images/titanic2.webp"><img class="menu" src="../../assets/images/titanic2.webp"></a>
         </span>
 
     </div>

@@ -1,30 +1,18 @@
 <!-- Alex Tedesco -->
 <!-- ISTE-240 -->
-<!-- Individual Project 1 -->
+<!-- Individual Project 2 -->
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/styles.css">
-    <!-- Sets the favicon to the Gatlinburg logo -->
-    <link rel="icon" type="image/x-icon" href="../../assets/gatlinburg-logo.png">
-    <title>Fires of 1996</title>
-</head>
-
-<body>
-    <!-- Container for nav, iframe, and form -->
-    <div class="container">
-    <?php
-        include ("../../inc/nav.php");
-    ?>
+<?php
+    $title = "Fires of 1996";
+    $cssPath = "../../assets/css/styles.css";
+    $faviconPath = "../../assets/images/gatlinburg-logo.png";
+    include ("../../assets/inc/header.php");
+    include ("../../assets/inc/nav.php");
+?>
 
         <span>
             <h1>Fires of 1996</h1>
-            <img src="../../assets/fires1996.webp">
+            <img src="../../assets/images/fires1996.webp">
 
             <p>
                 On the night of July 14, 1992, Gatlinburg gained national attention when an entire city block burned to the 
@@ -40,8 +28,8 @@
         <hr>
 
         <span>
-            <img src="../../assets/fires1996_2.webp">
-            <img src="../../assets/fires1996_3.webp">
+            <img src="../../assets/images/fires1996_2.webp">
+            <img src="../../assets/images/fires1996_3.webp">
         </span>
 
     </div>

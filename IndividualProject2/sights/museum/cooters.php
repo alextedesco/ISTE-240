@@ -1,30 +1,18 @@
 <!-- Alex Tedesco -->
 <!-- ISTE-240 -->
-<!-- Individual Project 1 -->
+<!-- Individual Project 2 -->
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/styles.css">
-    <!-- Sets the favicon to the Gatlinburg logo -->
-    <link rel="icon" type="image/x-icon" href="../../assets/gatlinburg-logo.png">
-    <title>Cooter's Place</title>
-</head>
-
-<body>
-    <!-- Container for nav, iframe, and form -->
-    <div class="container">
-        <?php
-          include ("../../inc/nav.php");
-        ?>
+<?php
+    $title = "Cooter's Place";
+    $cssPath = "../../assets/css/styles.css";
+    $faviconPath = "../../assets/images/gatlinburg-logo.png";
+    include ("../../assets/inc/header.php");
+    include ("../../assets/inc/nav.php");
+?>
 
         <span>
             <h1>Cooter's Place</h1>
-            <img src="../../assets/cooters.jpg">
+            <img src="../../assets/images/cooters.jpg">
 
             <p>
                 Cooter's Place is the museum of the "Dukes of Hazzard" TV show with indoor go-kart & mini-golf, and 
@@ -37,9 +25,9 @@
         <span>
             <h1>Hours</h1>
             <br>
-            <img src="../../assets/open.gif">
+            <img id="open-closed-image" src="">
             
-            <ul class="hours">
+            <ul id="opening-hours">
                 <li>Sunday: 9AM - 6PM</li>
                 <li>Monday: 9AM - 6PM</li>
                 <li>Tuesday: 9AM - 6PM</li>
@@ -50,12 +38,14 @@
             </ul>
         </span>
 
+        <?php include ("../../assets/inc/openClosed.php");?>
+
         <hr>
 
         <span class="interior">
             <h1>Interior</h1>
-            <a href="../../assets/cooters_interior.jfif"><img class="menu" src="../../assets/cooters_interior.jfif"></a>
-            <a href="../../assets/cooters_interior.webp"><img class="menu" src="../../assets/cooters_interior.webp"></a>
+            <a href="../../assets/images/cooters_interior.jfif"><img class="menu" src="../../assets/images/cooters_interior.jfif"></a>
+            <a href="../../assets/images/cooters_interior.webp"><img class="menu" src="../../assets/images/cooters_interior.webp"></a>
         </span>
 
     </div>

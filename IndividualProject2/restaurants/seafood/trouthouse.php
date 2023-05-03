@@ -1,30 +1,18 @@
 <!-- Alex Tedesco -->
 <!-- ISTE-240 -->
-<!-- Individual Project 1 -->
+<!-- Individual Project 2 -->
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/styles.css">
-    <!-- Sets the favicon to the Gatlinburg logo -->
-    <link rel="icon" type="image/x-icon" href="../../assets/gatlinburg-logo.png">
-    <title>Smokey Mountain Trout House</title>
-</head>
-
-<body>
-    <!-- Container for nav, iframe, and form -->
-    <div class="container">
-        <?php
-          include ("../../inc/nav.php");
-        ?>
+<?php
+    $title = "Smokey Mountain Trout House";
+    $cssPath = "../../assets/css/styles.css";
+    $faviconPath = "../../assets/images/gatlinburg-logo.png";
+    include ("../../assets/inc/header.php");
+    include ("../../assets/inc/nav.php");
+?>
 
         <span>
             <h1>History</h1>
-            <img src="../../assets/trouthouse.webp">
+            <img src="../../assets/images/trouthouse.webp">
 
             <p>
                 Smoky Mountain Trout House opened in 1975 and is one of Gatlinburg's oldest buildings. It features an
@@ -37,7 +25,7 @@
 
         <span>
             <h1>Reviews</h1>
-            <img src="../../assets/trouthouse_food.jpg">
+            <img src="../../assets/images/trouthouse_food.jpg">
 
             <p>
                 Smokey Mountain Trout House currently has 4.3 stars out of 5 on Google Reviews on 1,070 reviews. Patrons
@@ -53,7 +41,7 @@
 
         <span>
             <h1>Menu</h1>
-            <a href="../../assets/trouthouse_menu.jpg"><img class="menu" src="../../assets/bubbagump_menu.jpg"></a>
+            <a href="../../assets/images/trouthouse_menu.jpg"><img class="menu" src="../../assets/images/trouthouse_menu.jpg"></a>
         </span>
 
     </div>

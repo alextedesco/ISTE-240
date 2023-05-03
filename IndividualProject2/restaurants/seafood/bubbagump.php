@@ -1,21 +1,18 @@
 <!-- Alex Tedesco -->
 <!-- ISTE-240 -->
-<!-- Individual Project 1 -->
+<!-- Individual Project 2 -->
 
 <?php
     $title = "Bubba Gump Shrimp Company";
-    $cssPath = "../../css/styles.css";
-    $faviconPath = "../../assets/gatlinburg-logo.png";
-    include ("../../inc/header.php");
-?>
-
-<?php
-    include ("../../inc/nav.php");
+    $cssPath = "../../assets/css/styles.css";
+    $faviconPath = "../../assets/images/gatlinburg-logo.png";
+    include ("../../assets/inc/header.php");
+    include ("../../assets/inc/nav.php");
 ?>
 
         <span>
             <h1>History</h1>
-            <img src="../../assets/bubbagump.jpg">
+            <img src="../../assets/images/bubbagump.jpg">
 
             <p>
                 The Bubba Gump Shrimp Company was founded in 1995 after entrepreneur Anthony Zolezzi bought the rights to the name 
@@ -30,7 +27,7 @@
 
         <span>
             <h1>Reviews</h1>
-            <img src="../../assets/bubbagump_gatlinburg.jpg">
+            <img src="../../assets/images/bubbagump_gatlinburg.jpg">
 
             <p>
                 The Bubba Gump Shrimp Company in Gatlinburg has 4.2 stars out of 5 on Google Reviews on 7,800 reviews. 
@@ -46,7 +43,7 @@
 
         <span>
             <h1>Menu</h1>
-            <a href="../../assets/bubbagump_menu.jpg"><img class="menu" src="../../assets/bubbagump_menu.jpg"></a>
+            <a href="../../assets/images/bubbagump_menu.jpg"><img class="menu" src="../../assets/images/bubbagump_menu.jpg"></a>
         </span>
 
     </div>

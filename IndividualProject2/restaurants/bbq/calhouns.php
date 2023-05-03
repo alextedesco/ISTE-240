@@ -1,30 +1,18 @@
 <!-- Alex Tedesco -->
 <!-- ISTE-240 -->
-<!-- Individual Project 1 -->
+<!-- Individual Project 2 -->
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/styles.css">
-    <!-- Sets the favicon to the Gatlinburg logo -->
-    <link rel="icon" type="image/x-icon" href="../../assets/gatlinburg-logo.png">
-    <title>Calhoun's BBQ</title>
-</head>
-
-<body>
-    <!-- Container for nav, iframe, and form -->
-    <div class="container">
-        <?php
-          include ("../../inc/nav.php");
-        ?>
+<?php
+    $title = "Calhoun's BBQ";
+    $cssPath = "../../assets/css/styles.css";
+    $faviconPath = "../../assets/images/gatlinburg-logo.png";
+    include ("../../assets/inc/header.php");
+    include ("../../assets/inc/nav.php");
+?>
 
         <span>
             <h1>History</h1>
-            <img src="../../assets/calhouns.jpg">
+            <img src="../../assets/images/calhouns.jpg">
 
             <p>
                 Calhoun's was founded in 1983 with its first store in Kingston Pike. Their distinct and tasty BBQ methods 
@@ -39,7 +27,7 @@
 
         <span>
             <h1>Reviews</h1>
-            <img src="../../assets/calhouns_food.jpg">
+            <img src="../../assets/images/calhouns_food.jpg">
 
             <p>
                 Calhoun's in Gatlinburg currently has 4.2 stars out of 5 on Google Reviews on 4,106 reviews. Reviewers have 
@@ -55,7 +43,7 @@
 
         <span>
             <h1>Menu</h1>
-            <a href="../../assets/calhouns_menu.pdf"><img class="menu" src="../../assets/calhouns_menu.jpg"></a>
+            <a href="../../assets/images/calhouns_menu.pdf"><img class="menu" src="../../assets/images/calhouns_menu.jpg"></a>
         </span>
 
     </div>

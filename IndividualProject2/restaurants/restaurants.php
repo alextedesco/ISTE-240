@@ -1,30 +1,18 @@
 <!-- Alex Tedesco -->
 <!-- ISTE-240 -->
-<!-- Individual Project 1 -->
+<!-- Individual Project 2 -->
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
-    <!-- Sets the favicon to the Gatlinburg logo -->
-    <link rel="icon" type="image/x-icon" href="../assets/gatlinburg-logo.png">
-    <title>Restaurants</title>
-</head>
-
-<body>
-    <!-- Container for nav, iframe, and form -->
-    <div class="container">
-        <?php
-          include ("../inc/nav.php");
-        ?>
+<?php
+    $title = "Restaurants";
+    $cssPath = "../assets/css/styles.css";
+    $faviconPath = "../assets/images/gatlinburg-logo.png";
+    include ("../../assets/inc/header.php");
+    include ("../../assets/inc/nav.php");
+?>
 
         <span>
             <h1>Breakfast/Coffee</h1>
-            <img src="../assets/breakfast.jpg">
+            <img src="../assets/images/breakfast.jpg">
 
             <p>
                 During your visit in Gatlinburg you can't skip out on breakfast! Gatlinburg has the some of the best breakfast restaurants in the country. For your coffee
@@ -37,7 +25,7 @@
 
         <span>
             <h1>BBQ</h1>
-            <img src="../assets/bbq.webp">
+            <img src="../assets/images/bbq.webp">
             <p>
                You can't visit the Gatlinburg, let alone the Southern United States, without trying some of famous barbecue. Gatlinburg has a large variety of 
                great barbecue restaurants to visit including the <a href="bbq/calhouns.html">Calhoun's</a>, the <a href="bbq/hungrybearbbq.html">Hungry Bear BBQ</a>, and <a href="bbq/bennetts.html">Bennett's Pit Bar-B-Que</a>
@@ -48,7 +36,7 @@
 
         <span>
             <h1>Seafood</h1>
-            <img src="../assets/seafood.jpg">
+            <img src="../assets/images/seafood.jpg">
             <p>Gatlinburg is the home to many amazing seafood restauants including the Forest Gump inspired <a href="seafood/bubbagump.html">Bubba Gump Shrimp Company</a> and
                 a local favorite the <a href="seafood/trouthouse.html">Smokey Mountain Trout House</a>
             </p>

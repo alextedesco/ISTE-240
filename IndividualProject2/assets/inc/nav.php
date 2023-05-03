@@ -7,7 +7,7 @@ $current_url = basename($_SERVER['REQUEST_URI']);
   <!-- Navigation element for containing all subpages (list elements) -->
   <nav>
     <!-- Gatlinburg Logo -->
-    <img src="http://solace.ist.rit.edu/~act2076/ISTE240/IndividualProjects/Project2/assets/gatlinburg-logo.png" alt="Logo of Gatlinburg, Tennessee">
+    <a href="http://solace.ist.rit.edu/~act2076/ISTE240/IndividualProjects/Project2/index.php"><img src="http://solace.ist.rit.edu/~act2076/ISTE240/IndividualProjects/Project2/assets/images/gatlinburg-logo.png" alt="Logo of Gatlinburg, Tennessee"></a>
     <ul>
       <li><a <?php if ($current_url == "index.php") {
                 echo 'href="#"'; 

@@ -1,30 +1,18 @@
 <!-- Alex Tedesco -->
 <!-- ISTE-240 -->
-<!-- Individual Project 1 -->
+<!-- Individual Project 2 -->
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/styles.css">
-    <!-- Sets the favicon to the Gatlinburg logo -->
-    <link rel="icon" type="image/x-icon" href="../../assets/gatlinburg-logo.png">
-    <title>Beyond The Lens</title>
-</head>
-
-<body>
-    <!-- Container for nav, iframe, and form -->
-    <div class="container">
-        <?php
-          include ("../../inc/nav.php");
-        ?>
+<?php
+    $title = "Beyond The Lens";
+    $cssPath = "../../assets/css/styles.css";
+    $faviconPath = "../../assets/images/gatlinburg-logo.png";
+    include ("../../assets/inc/header.php");
+    include ("../../assets/inc/nav.php");
+?>
 
         <span>
             <h1>Beyond The Lens</h1>
-            <img src="../../assets/beyond_the_lens.jpg">
+            <img src="../../assets/images/beyond_the_lens.jpg">
 
             <p>
                 Beyond The Lens is the perfect spot for fun with the kids. Have the time of your life with 
@@ -38,8 +26,8 @@
         <span>
             <h1>Hours</h1>
             <br>
-            <img src="../../assets/open.gif">            
-            <ul>
+            <img id="open-closed-image" src="">            
+            <ul id="opening-hours">
                 <li>Sunday: 10AM - 7PM</li>
                 <li>Monday: 10AM - 7PM</li>
                 <li>Tuesday: 10AM - 7PM</li>
@@ -50,6 +38,8 @@
             </ul>
         </span>
 
+        <?php include ("../../assets/inc/openClosed.php");?>
+
         <hr>
 
         <span>
@@ -58,7 +48,7 @@
                 <li>Adult - $28.99</li>
                 <li>Children - $16.99</li>
             </ul>
-            <img src="../../assets/beyond_the_lens.2.jpg">
+            <img src="../../assets/images/beyond_the_lens.2.jpg">
         </span>
 
     </div>
