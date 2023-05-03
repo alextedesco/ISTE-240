@@ -43,6 +43,10 @@ header {
     margin: auto;
     justify-content: center;
   }
+
+  nav .lightmode {
+    float: right;
+  }
   
   nav ul {
     display: flex;

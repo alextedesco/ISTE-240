@@ -8,6 +8,7 @@ $current_url = basename($_SERVER['REQUEST_URI']);
   <nav>
     <!-- Gatlinburg Logo -->
     <a href="http://solace.ist.rit.edu/~act2076/ISTE240/IndividualProjects/Project2/index.php"><img src="http://solace.ist.rit.edu/~act2076/ISTE240/IndividualProjects/Project2/assets/images/gatlinburg-logo.png" alt="Logo of Gatlinburg, Tennessee"></a>
+    <img src="http://solace.ist.rit.edu/~act2076/ISTE240/IndividualProjects/Project2/assets/images/lightmode.png" onclick="lightmode()" class="lightmode">
     <ul>
       <li><a <?php if ($current_url == "index.php") {
                 echo 'href="#"'; 
