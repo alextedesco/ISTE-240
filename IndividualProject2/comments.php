@@ -7,15 +7,24 @@
 // If it is, "Connection successful" is outputed in console.log
 include ("dbcon.php");
 
+// Sanitize function for the form
+function sanitize($string, $len = 200){
+    $string = trim($string);
+    $string = htmlentities($string);
+    $string = substr($string,0,$len);
+
+    return $string;
+}
+
 // Checks if the inputs aren't empty before submission
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	if (!empty($_POST['fname'] )  && !empty($_POST['lname'] ) && !empty($_POST['email'] ) && !empty($_POST['restaurant'] ) && !empty($_POST['sight'] ) && !empty($_POST['comment'] )) {
-		$fname = $_POST['fname'];
-		$lname = $_POST['lname'];
-		$email = $_POST['email'];
-		$restaurant = $_POST['restaurant'];
-		$sight = $_POST['sight'];
-		$comment = $_POST['comment'];
+		$fname = sanitize($_POST['fname']);
+		$lname = sanitize($_POST['lname']);
+		$email = sanitize($_POST['email']);
+		$restaurant = sanitize($_POST['restaurant']);
+		$sight = sanitize($_POST['sight']);
+		$comment = sanitize($_POST['comment']);
 		
 		$stmt = $conn->prepare("INSERT INTO `comments` (`fname`, `lname`, `email`, `restaurant`, `sight`, `comment`) VALUES (?, ?, ?, ?, ?, ?);");
 		

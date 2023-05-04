@@ -3,7 +3,7 @@
 <!-- Individual Project 2 -->
 
 <?php
-    $title = "Crockett;s Breakfast Camp";
+    $title = "Crockett's Breakfast Camp";
     $cssPath = "../../assets/css/styles.css";
     $jsPath = "../../assets/js/script.js";
     $faviconPath = "../../assets/images/gatlinburg-logo.png";

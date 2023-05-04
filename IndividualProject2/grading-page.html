@@ -13,43 +13,44 @@
     <!-- Sets the favicon to the Gatlinburg logo -->
     <link rel="icon" type="image/x-icon" href="assets/gatlinburg-logo.png">
     <title>Grading Page</title>
+    <style>
+        .answer {
+            color: red;
+        }
+    </style>
 </head>
-<style>
-    .answer {
-        color: red;
-    }
-</style>
 <body>
     <h1>Grading Page</h1>
     <h2>Alex Tedesco</h2>
+
     <p>Answers highlighted in red or ✅</p>
     <ol>
         <li>This project will be put on your solace.ist.rit.edu account. 
             Do not modify the original files from your first project; instead,
              copy them into a new directory for this project named 'final' 
              in your directory on solace.ist.rit.edu, then modify the copied
-              version.</li>
-            <p class="answer">✅</p>
+              version.
+            <p class="answer">✅</p></li>
         <li>Every page must be built in parts (a header and a footer file will be included using PHP). 
             There should be NO repeated code (except for content that is unique for each page)! 
-            Talk to me if you are confused on this.</li>
+            Talk to me if you are confused on this.
             <p class="answer">PHP includes were used for the header and footer with variables being 
                 declared at the top of the file to specify things specific to the file 
                 like CSS/JS/Favicon paths and the title
-            </p>
+            </p></li>
         <li><strong>Comments form</strong></li>
             <ol>
                 <li>Create a new PHP page (THIS SHOULD BE ON ITS OWN WEB PAGE!) called comments.php 
                     (or something similar that fits with your website theme), which will 
                     have a form in it that will accept user input.<br/><br/>At a minimum the comment form should accept and store</li>
                     <ol>
-                        <li>Name (first and last)</li>
-                        <p id="answer">✅</p>
-                        <li>Email (you can collect this even if you don't want to make it visible</li>
-                        <p>✅</p>
-                        <li>Comment (a multi line area where they can enter a comment</li>
+                        <li>Name (first and last)
+                        <p id="answer">✅</p></li>
+                        <li>Email (you can collect this even if you don't want to make it visible
+                        <p>✅</p></li>
+                        <li>Comment (a multi line area where they can enter a comment
                         <br/>
-                        <p id="answer">✅</p>
+                        <p id="answer">✅</p></li>
                         <p><strong>Note: </strong>if you think back to week 5 we made a form to rate your place. This accepts a bit more then when i am 
                             asking for above for example how you rate the place. If you wish you 
                             can add more fields than the three mentioned above and 
@@ -59,67 +60,68 @@
                             and favorite site in my database
                         </p>
                     </ol>
-                <li>Display previous comments beneath the "new comment" form (the comments will be acquired from a database). Existing comments should display regardless of whether the user submits a comment .</li>
-                <p>✅</p>
-                <li>You must validate your form before submit and php processing with javascript! I am looking for you to do actual javascript validation here for full credit and NOT the HTML5 required attributes. Ex: have a JavaScript function that runs on submit of the form that validates all of the user input (and the form will NOT submit if the validation fails!). </li>
-                <p>✅</p>
-                <li>Once the form passes validation, you will pass the information on to a PHP page (this could be the same comments.php page or a seperate php page for processing) that takes the information, validates (since we can't trust what we got from javascript validation) and sanitizes it</li>
-                <p>✅</p>
-                <li>You will connect to the database with PHP and add it to a database using a prepared statement for full credit (and the comments page will then show the old and new comments!).</li>
-                <p>✅</p>
-                <li>You must use the MySQLi API for all database calls.</li>
-                <p>✅</p>
+                <li>Display previous comments beneath the "new comment" form (the comments will be acquired from a database). Existing comments should display regardless of whether the user submits a comment .
+                <p>✅</p></li>
+                <li>You must validate your form before submit and php processing with javascript! I am looking for you to do actual javascript validation here for full credit and NOT the HTML5 required attributes. Ex: have a JavaScript function that runs on submit of the form that validates all of the user input (and the form will NOT submit if the validation fails!). 
+                <p>✅</p></li>
+                <li>Once the form passes validation, you will pass the information on to a PHP page (this could be the same comments.php page or a seperate php page for processing) that takes the information, validates (since we can't trust what we got from javascript validation) and sanitizes it
+                <p>✅</p></li>
+                <li>You will connect to the database with PHP and add it to a database using a prepared statement for full credit (and the comments page will then show the old and new comments!).
+                <p>✅</p></li>
+                <li>You must use the MySQLi API for all database calls.
+                <p>✅</p></li>
             </ol>
         <li>An original JavaScript element</li>
             <ol>
-                <li>Not one generated by a program or retrieved from an archive.</li>
-                <p class="answer">✅</p>
-                <li>NO Libraries – (jQuery, Mootools, Scriptaculous, etc)</li>
-                <p class="answer">✅</p>
-                <li>This must be in addition to the JS form validation ), described above, and the DHTML element described in item 5 (however you can combine these into one if you wish - described below.</li>
-                <p class="answer">✅</p>
-                <li>This must not be a silly addition that makes no sense, like a clock! This is sometimes tricky to come up with something so chat with me early if you are struggling for an idea. Make sure to document what you did on the grading/about page described below!</li>
+                <li>Not one generated by a program or retrieved from an archive.
+                <p class="answer">✅</p></li>
+                <li>NO Libraries – (jQuery, Mootools, Scriptaculous, etc)
+                <p class="answer">✅</p></li>
+                <li>This must be in addition to the JS form validation ), described above, and the DHTML element described in item 5 (however you can combine these into one if you wish - described below.
+                <p class="answer">✅</p></li>
+                <li>This must not be a silly addition that makes no sense, like a clock! This is sometimes tricky to come up with something so chat with me early if you are struggling for an idea. Make sure to document what you did on the grading/about page described below!
                 <p class="answer">JavaScript code located in /inc/openClosed.php that determines which gif to use for an attractions hours. I used regular expression to cut the information in 
                     the hours unordered lists then compared that to the current time and day. If the attraction is currently open it
                     displays the /images/open.gif and if closed it displays the /images/closed.gif
-                </p>
+                </p></li>
             </ol>
         <li>A DHTML component you created. </li>
             <ol>
                 <li>The component selected should add some value to the page it's on; it should not be a silly addition to the site.</li>
                 <li>Something in the sites style should be changed dynamically to fulfill this DHTML requirement. Often times this will involve using the JS functions setTimeout(), or setInterval. You can also do something like an animation like with the ball in class, or something like a fade in or fade out based upon an event.</li>
                 <li>Do NOT use a library for this element either.</li>
-                <li>You may optionally combine the DHTML component with the JavaScript element from above. For example, you could create an image gallery that allows a user to toggle through images (which satisfies the requirements for #4 above) and when the images appear, they fade in (which satisfies the requirements for the DHTML component by changing an elements style). However I do not want people just copying the in class exercise we did. You may use it as a starting guide but it would need to be heavily improved upon (for ex adding the fade in / out).</li>
+                <li>You may optionally combine the DHTML component with the JavaScript element from above. For example, you could create an image gallery that allows a user to toggle through images (which satisfies the requirements for #4 above) and when the images appear, they fade in (which satisfies the requirements for the DHTML component by changing an elements style). However I do not want people just copying the in class exercise we did. You may use it as a starting guide but it would need to be heavily improved upon (for ex adding the fade in / out).
 
                 <p class="answer">I added a 'light mode/dark mode' icon in the top right of the page that changed the overall look of the page 
                     from dark green background to goldenrod background This makes it look more visually appealing to some who prefer lighter 
                     colors as the majority. The 'Dark Mode' color pallete does remain the default when traversing the site requiring light mode 
                     to be clicked once more. The lightbulb icon also changes from transparent to bright yellow.
-                </p>
+                </p></li>
                 
             </ol>
-        <li>EXTRAS (not extra credit) - If you do everything listed (excluding this item) you will get an 85. to get to a 100 you need to do some extra things. See the rubric around page 3 (the table) for ideas on how to get these (and make sure you document what you do as described in step 8 below).</li>
+        <li>EXTRAS (not extra credit) - If you do everything listed (excluding this item) you will get an 85. to get to a 100 you need to do some extra things. See the rubric around page 3 (the table) for ideas on how to get these (and make sure you document what you do as described in step 8 below).
         <p class="answer">The Homepage features an embedded google maps of the city for users to search around, each of the restaurants has their 
             google reviews star rating displayed using an idiomatic text element which using CSS fills in the stars with the correct amount of space, 
             a favicon is implemented featuring the official Gatlinburg bear, and with the DHTML lightmode/darkmode toggle is a CSS animation that allows 
             for a smooth transition between the colors.
-        </p>
-        <li>You will add to your about / grading page the updates you did for the final and the extras. In theory if you do an extra and don’t mention what you did on the grading page you would not get the credit for it (in most cases if I am not able to spot it). In reality this is because I have a quick turn around to grade these and oftentimes are extras/JS might not be obvious when just visiting the site so if you don’t document it I won’t know what to look for and there isn’t always enough turn around time to go back and forth after I submit the actual grade. </li>
-        <p class="answer">✅</p>
-        <li>Your about / grading page should be structured like this:</li>
+        </p></li>
+        <li>You will add to your about / grading page the updates you did for the final and the extras. In theory if you do an extra and don’t mention what you did on the grading page you would not get the credit for it (in most cases if I am not able to spot it). In reality this is because I have a quick turn around to grade these and oftentimes are extras/JS might not be obvious when just visiting the site so if you don’t document it I won’t know what to look for and there isn’t always enough turn around time to go back and forth after I submit the actual grade.
+        <p class="answer">✅</p></li>
+        <li>Your about / grading page should be structured like this:
         <p class="answer">You are reading my grading page so you can see I depict what I have done 
             throughout the website
-        </p>
-        <li>Your file structure must be appropriate (e.g. an ‘assets’ directory that contains ‘css’, ‘scripts’, ‘media’, etc).</li>
-        <p class="answer">The assets directory has "css", "images", "js", and "inc" directories</p>
-        <li>All HTML and CSS must validate using the w3 validators for full credit.</li>
-        <p class="answer">✅</p>
-        <li>All pages must display well in the major browsers: Firefox, Chrome, Edge, and Safari.</li>
-        <p class="answer">✅</p>
-        <li>Your site must be responsive for mobile devices, both in the layout and the menu!</li>
-        <p class="answer">✅</p>
-        <li>Fix all that I took off points for in the first iteration - There are 5 points in the rubric for this. If you got 100 on the first project deliverable you don’t need to do anything here and you will get the 5 points. However if you lost points in the first submission you must address these to get these 5 points here.</li>
-        <p class="answer">Dropdown menu added, HTML/PHP/CSS all validates, works cited page included with references to all images used in project, and grading page showcases specific details done to the website</p>
+        </p></li>
+        <li>Your file structure must be appropriate (e.g. an ‘assets’ directory that contains ‘css’, ‘scripts’, ‘media’, etc).
+        <p class="answer">The assets directory has "css", "images", "js", and "inc" directories</p></li>
+        <li>All HTML and CSS must validate using the w3 validators for full credit.
+        <p class="answer">✅</p></li>
+        <li>All pages must display well in the major browsers: Firefox, Chrome, Edge, and Safari.
+        <p class="answer">✅</p></li>
+        <li>Your site must be responsive for mobile devices, both in the layout and the menu!
+        <p class="answer">✅</p></li>
+        <li>Fix all that I took off points for in the first iteration - There are 5 points in the rubric for this. If you got 100 on the first project deliverable you don’t need to do anything here and you will get the 5 points. However if you lost points in the first submission you must address these to get these 5 points here.
+        <p class="answer">Dropdown menu added, HTML/PHP/CSS all validates, works cited page included with references to all images used in project, and grading page showcases specific details done to the website</p></li>
+    </ol>
     
 </body>
 </html>
