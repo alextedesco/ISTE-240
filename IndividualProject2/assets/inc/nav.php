@@ -8,13 +8,21 @@ $current_url = basename($_SERVER['REQUEST_URI']);
   <nav>
     <!-- Gatlinburg Logo -->
     <a href="http://solace.ist.rit.edu/~act2076/ISTE240/final/index.php"><img src="http://solace.ist.rit.edu/~act2076/ISTE240/final/assets/images/gatlinburg-logo.png" alt="Logo of Gatlinburg, Tennessee"></a>
-    <img src="http://solace.ist.rit.edu/~act2076/ISTE240/final/assets/images/lightmode.png" onclick="lightMode()" class="lightmode">
+    <img src="http://solace.ist.rit.edu/~act2076/ISTE240/final/assets/images/darkmode.png" onclick="lightMode()" id="lightbulb" class="lightmode">
     <ul>
       <li><a <?php if ($current_url == "index.php") {
                 echo 'href="#"'; 
               } else {
                 echo 'href="http://solace.ist.rit.edu/~act2076/ISTE240/final/index.php"';
-              }?>>Home</a></li>
+              }?>>Home</a>
+              <ul>
+                <li><a <?php if ($current_url == "comments.php") {
+                echo 'href="#"'; 
+              } else {
+                echo 'href="http://solace.ist.rit.edu/~act2076/ISTE240/final/comments.php"';
+              }?>>Leave a comment</a></li>
+              </ul>
+            </li>
       <li class="seperator">|</li>
       <li>
         <a <?php if ($current_url == "sights.php") {
@@ -97,7 +105,11 @@ $current_url = basename($_SERVER['REQUEST_URI']);
       </li>
       <li class="seperator">|</li>
       <li>
-        <a href="#">Restaurants</a>
+        <a <?php if ($current_url == "restaurants.php") {
+                echo 'href="#"'; 
+              } else {
+                echo 'href="http://solace.ist.rit.edu/~act2076/ISTE240/final/restaurants/restaurants.php"';
+              }?>href="#">Restaurants</a>
         <ul>
           <li>
             <a href="#">BBQ</a>

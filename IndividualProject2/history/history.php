@@ -12,7 +12,7 @@
 ?>
 
         <span>
-            <h1><a href="nativeamerican/nativeamerican.html">Cherokee Native American Land</a></h1>
+            <h1><a href="nativeamerican/nativeamerican.php">Cherokee Native American Land</a></h1>
             <img src="../assets/images/cherokee.jpg">
 
             <p>
@@ -25,7 +25,7 @@
         <hr>
 
         <span>
-            <h1><a href="civilwar/civilwar.html">Civil War</a></h1>
+            <h1><a href="civilwar/civilwar.php">Civil War</a></h1>
             <img src="../assets/images/civilwar.jpg">
             <p>
                 Gatlinburg was one of the prime locations during the Civil War with resistant 
@@ -40,7 +40,7 @@
             <h1>Fires</h1>
             <img src="../assets/images/fires.webp">
             <p>Gatlinburg has suffered multiple tragic fires that have caused significant damage to the Smokey Mountains 
-                and other notable buildings. The most notable fires to impact Gatlinburg are the <a href="fires/fires_1992.html">Fires of 1992</a> and the <a href="fires/fires_2016.html">Fires of 2016</a>.
+                and other notable buildings. The most notable fires to impact Gatlinburg are the <a href="fires/fires_1992.php">Fires of 1992</a> and the <a href="fires/fires_2016.php">Fires of 2016</a>.
             </p>
         </span>
 
