@@ -19,6 +19,8 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/* Navigation styles */
+
 header {
     display: flex;
     justify-content: center;
@@ -32,7 +34,7 @@ header {
     width: 80%;
     margin: 0;
   }
-  
+/* Positions the Gatlinburg logo to the left of the nav */
   nav img {
     float: left;
     height: 90px;
@@ -42,7 +44,7 @@ header {
     margin: auto;
     justify-content: center;
   }
-
+/* Positions the lightbulb image to the right of the nav */
   nav .lightmode {
     float: right;
     height: 90px;
@@ -114,6 +116,8 @@ header {
   }
   
   /* Adjusts position of submenus based on parent's position */
+
+  /* Nav dropdown implementations */
   
   nav ul ul li {
     position: relative;
@@ -287,6 +291,8 @@ span li:hover {
     font-size: 25px;
 }
 
+/* Star Rating System Configuration */
+
 i {
     float: left;
     font-size: 100px;
@@ -298,7 +304,6 @@ i {
   font-style: normal;
   display: inline-block;
   position: relative;
-  /* unicode-bidi: bidi-override; */
 }
 [data-star]::before { 
   display: block;
@@ -316,7 +321,8 @@ i {
   overflow:hidden;
   height:100%;
 }
-
+/* Fills in the <i> tag star system with the correct amount of space
+corresponding to the rating of the restaruants */
 [data-star^="0.1"]::after,[data-star^=".1"]::after{width:2%}
 [data-star^="0.2"]::after,[data-star^=".2"]::after{width:4%}
 [data-star^="0.3"]::after,[data-star^=".3"]::after{width:6%}

@@ -1,14 +1,14 @@
 <script>
-    // Get the current day and time
+    // Obtains the current date
     var now = new Date();
     var currentDay = now.getDay();
     var currentTime = now.getHours() + (now.getMinutes() / 60);
 
-    // Get the opening hours for the current day
+    // Obtains the hours elements
     var openingHoursList = document.getElementById("opening-hours");
     var openingHours = openingHoursList.children[currentDay].textContent;
 
-    // Extract the opening and closing times from the opening hours string
+    // Uses regular expression to cut down the day/hours string
     var regex = /(\d+)(AM|PM)\s-\s(\d+)(AM|PM)/;
     var matches = openingHours.match(regex);
     var openingTime = parseInt(matches[1]);
@@ -20,7 +20,7 @@
         closingTime += 12;
     }
 
-    // Determine if the store is currently open or closed
+    // Determines if the attraction is open currently, if it is then we use open.gif, else we use closed.gif
     var isOpen;
     if (currentTime >= openingTime && currentTime < closingTime) {
         isOpen = true;

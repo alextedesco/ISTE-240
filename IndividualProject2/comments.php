@@ -4,6 +4,7 @@
 
 <?php
 // Confirms that the database can be connected to successfully
+// If it is, "Connection successful" is outputed in console.log
 include ("dbcon.php");
 
 // Checks if the inputs aren't empty before submission
@@ -20,7 +21,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		
 		$stmt->bind_param("ssssss", $fname, $lname, $email, $sight, $restaurant, $comment);
 		$stmt->execute();
-		$stmt->close();
+		$stmt->close();	
+// If there is a missing tag a JavaScript alert will appear informing the user to fill it in
 } else {
 	echo "<script>alert('Missing one of more required fields!');</script>";
 	}
@@ -70,8 +72,10 @@ $result = $conn->query($sql);
 			  <h2>Most Recent Comment</h2>
 
              <?php
+			//  Obtains the most recent comment 
 			 	$most_recent_record = end($records);
 				echo "Name: " . $most_recent_record['fname'] . " " . $most_recent_record['lname'] .  "<br/>Email: " . $most_recent_record['email'] . "<br/>Favorite Restaurant: " . $most_recent_record['restaurant'] . "<br/>Favorite Sight: " . $most_recent_record['sight'] . "<br/>Comment: " . $most_recent_record['comment'];
+				// Obtains all other comments from the record
 			 	$other_records = array_slice($records, 0,  -1);
 	        	// Outputs the current records in the comments MySQL table
 				echo "<h2>Previous Comments</h2>";

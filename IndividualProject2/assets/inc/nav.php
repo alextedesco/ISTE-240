@@ -1,8 +1,13 @@
+<!-- Alex Tedesco -->
+<!-- ISTE-240 -->
+<!-- Individual Project 2 -->
+
+
+<!-- Obtains the name of the file of the current loaded page -->
 <?php
 $current_url = basename($_SERVER['REQUEST_URI']);
 ?>
   
-  <!-- Navigation element for containing all subpages (list elements) -->
   <header>
   <!-- Navigation element for containing all subpages (list elements) -->
   <nav>
@@ -10,6 +15,9 @@ $current_url = basename($_SERVER['REQUEST_URI']);
     <a href="http://solace.ist.rit.edu/~act2076/ISTE240/final/index.php"><img src="http://solace.ist.rit.edu/~act2076/ISTE240/final/assets/images/gatlinburg-logo.png" alt="Logo of Gatlinburg, Tennessee"></a>
     <img src="http://solace.ist.rit.edu/~act2076/ISTE240/final/assets/images/darkmode.png" onclick="lightMode()" id="lightbulb" class="lightmode">
     <ul>
+      <!-- Each if else statement checks if the current_url matches the 
+      page file of that page. If it does it will echo a placeholder #. Else it will
+      echo the solace link to that page. This occurs for every page in the dropdown. -->
       <li><a <?php if ($current_url == "index.php") {
                 echo 'href="#"'; 
               } else {
@@ -23,6 +31,7 @@ $current_url = basename($_SERVER['REQUEST_URI']);
               }?>>Leave a comment</a></li>
               </ul>
             </li>
+      <!-- Seperator tag that adds a | equally in the nav -->
       <li class="seperator">|</li>
       <li>
         <a <?php if ($current_url == "sights.php") {

@@ -1,3 +1,9 @@
+<!-- Alex Tedesco -->
+<!-- ISTE-240 -->
+<!-- Individual Project 2 -->
+
+<!-- Header of each file which is included -->
+
 <!DOCTYPE html>
 <html id="html" lang="en" style="background-color: darkgreen;">
 
