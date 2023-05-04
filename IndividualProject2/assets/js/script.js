@@ -23,11 +23,3 @@ function lightMode () {
     }
   } 
   
-// Sanitize function for the form
-function sanitize($string, $len = 200){
-    $string = trim($string);
-    $string = htmlentities($string);
-    $string = substr($string,0,$len);
-
-    return $string;
-}
