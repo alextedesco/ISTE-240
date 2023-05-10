@@ -5,6 +5,7 @@
 <?php
     $title = "Bennett's Pit Bar-B-Que";
     $cssPath = "../../assets/css/styles.css";
+    $jsPath = "../../assets/js/script.js";
     $faviconPath = "../../assets/images/gatlinburg-logo.png";
     include ("../../assets/inc/header.php");
     include ("../../assets/inc/nav.php");
@@ -44,8 +45,6 @@
             <a href="../../assets/images/bennetts_menu.png"><img class="menu" src="../../assets/images/bennetts_menu.png"></a>
         </span>
 
-    </div>
-
-</body>
-
-</html>
+<?php
+include ("../../assets/inc/footer.php");
+?>

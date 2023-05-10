@@ -3,8 +3,9 @@
 <!-- Individual Project 2 -->
 
 <?php
-    $title = "Crockett;s Breakfast Camp";
+    $title = "Crockett's Breakfast Camp";
     $cssPath = "../../assets/css/styles.css";
+    $jsPath = "../../assets/js/script.js";
     $faviconPath = "../../assets/images/gatlinburg-logo.png";
     include ("../../assets/inc/header.php");
     include ("../../assets/inc/nav.php");
@@ -42,8 +43,6 @@
             <a href="../../assets/images/crocketts_menu.jpg"><img class="menu" src="../../assets/images/crocketts_menu.jpg"></a>
         </span>
 
-    </div>
-
-</body>
-
-</html>
+<?php
+include ("../../assets/inc/footer.php");
+?>

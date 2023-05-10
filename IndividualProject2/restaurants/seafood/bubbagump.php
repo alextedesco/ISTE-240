@@ -5,6 +5,7 @@
 <?php
     $title = "Bubba Gump Shrimp Company";
     $cssPath = "../../assets/css/styles.css";
+    $jsPath = "../../assets/js/script.js";
     $faviconPath = "../../assets/images/gatlinburg-logo.png";
     include ("../../assets/inc/header.php");
     include ("../../assets/inc/nav.php");
@@ -45,9 +46,6 @@
             <h1>Menu</h1>
             <a href="../../assets/images/bubbagump_menu.jpg"><img class="menu" src="../../assets/images/bubbagump_menu.jpg"></a>
         </span>
-
-    </div>
-
-</body>
-
-</html>
+<?php
+include ("../../assets/inc/footer.php");
+?>

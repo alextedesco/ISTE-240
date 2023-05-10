@@ -5,6 +5,7 @@
 <?php
     $title = "Fires of 2016";
     $cssPath = "../../assets/css/styles.css";
+    $jsPath = "../../assets/js/script.js";
     $faviconPath = "../../assets/images/gatlinburg-logo.png";
     include ("../../assets/inc/header.php");
     include ("../../assets/inc/nav.php");
@@ -33,8 +34,6 @@
             <img src="../../assets/images/fires2016_3.webp">
         </span>
 
-    </div>
-
-</body>
-
-</html>
+<?php
+include ("../../assets/inc/footer.php");
+?>

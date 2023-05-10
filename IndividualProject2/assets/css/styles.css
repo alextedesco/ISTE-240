@@ -1,11 +1,10 @@
 /* Alex Tedesco */
 /* ISTE-240 */
-/* Individual Project 1 */
+/* Individual Project 2 */
 
 /* Styles for HTML document */
 
 html {
-    background-color: darkgreen;
     height: 100%;
 }
 
@@ -17,9 +16,10 @@ body {
 .container {
     width: 90%;
     margin: 0 auto 0 auto;
-    background-color: forestgreen;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+/* Navigation styles */
 
 header {
     display: flex;
@@ -30,10 +30,11 @@ header {
   
   nav {
     display: block;
+    position: relative;
     width: 80%;
     margin: 0;
   }
-  
+/* Positions the Gatlinburg logo to the left of the nav */
   nav img {
     float: left;
     height: 90px;
@@ -43,9 +44,15 @@ header {
     margin: auto;
     justify-content: center;
   }
-
+/* Positions the lightbulb image to the right of the nav */
   nav .lightmode {
     float: right;
+    height: 90px;
+    padding-right: 1em;
+    padding-left: 1em;
+    display: block;
+    margin: auto;
+    justify-content: center;
   }
   
   nav ul {
@@ -109,6 +116,8 @@ header {
   }
   
   /* Adjusts position of submenus based on parent's position */
+
+  /* Nav dropdown implementations */
   
   nav ul ul li {
     position: relative;
@@ -118,7 +127,13 @@ header {
   nav ul ul ul li {
     position: relative;
     padding: 0 5px;
-    border-bottom: 1px black solid;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.3s ease-in-out;
+    
+  }
+
+  nav ul ul ul li:hover {
+    border-bottom-color: black;
   }
   
   nav ul ul ul {
@@ -128,8 +143,6 @@ header {
     width: 200px;
   }
   
-  
-
 h1 {
     text-align: left;
     margin: 0;
@@ -278,6 +291,8 @@ span li:hover {
     font-size: 25px;
 }
 
+/* Star Rating System Configuration */
+
 i {
     float: left;
     font-size: 100px;
@@ -289,7 +304,6 @@ i {
   font-style: normal;
   display: inline-block;
   position: relative;
-  /* unicode-bidi: bidi-override; */
 }
 [data-star]::before { 
   display: block;
@@ -307,7 +321,8 @@ i {
   overflow:hidden;
   height:100%;
 }
-
+/* Fills in the <i> tag star system with the correct amount of space
+corresponding to the rating of the restaruants */
 [data-star^="0.1"]::after,[data-star^=".1"]::after{width:2%}
 [data-star^="0.2"]::after,[data-star^=".2"]::after{width:4%}
 [data-star^="0.3"]::after,[data-star^=".3"]::after{width:6%}

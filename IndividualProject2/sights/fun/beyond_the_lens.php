@@ -5,6 +5,7 @@
 <?php
     $title = "Beyond The Lens";
     $cssPath = "../../assets/css/styles.css";
+    $jsPath = "../../assets/js/script.js";
     $faviconPath = "../../assets/images/gatlinburg-logo.png";
     include ("../../assets/inc/header.php");
     include ("../../assets/inc/nav.php");
@@ -51,8 +52,6 @@
             <img src="../../assets/images/beyond_the_lens.2.jpg">
         </span>
 
-    </div>
-
-</body>
-
-</html>
+<?php
+include ("../../assets/inc/footer.php");
+?>

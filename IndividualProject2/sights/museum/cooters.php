@@ -5,6 +5,7 @@
 <?php
     $title = "Cooter's Place";
     $cssPath = "../../assets/css/styles.css";
+    $jsPath = "../../assets/js/script.js";
     $faviconPath = "../../assets/images/gatlinburg-logo.png";
     include ("../../assets/inc/header.php");
     include ("../../assets/inc/nav.php");
@@ -48,8 +49,6 @@
             <a href="../../assets/images/cooters_interior.webp"><img class="menu" src="../../assets/images/cooters_interior.webp"></a>
         </span>
 
-    </div>
-
-</body>
-
-</html>
+<?php
+include ("../../assets/inc/footer.php");
+?>

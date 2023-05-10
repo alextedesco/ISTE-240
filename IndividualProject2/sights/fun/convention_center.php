@@ -5,6 +5,7 @@
 <?php
     $title = "Gatlinburg Convention Center";
     $cssPath = "../../assets/css/styles.css";
+    $jsPath = "../../assets/js/script.js";
     $faviconPath = "../../assets/images/gatlinburg-logo.png";
     include ("../../assets/inc/header.php");
     include ("../../assets/inc/nav.php");
@@ -37,8 +38,6 @@
             <p>Visiting the Gatlinburg Convention Center is free for all!</p>
         </span>
 
-    </div>
-
-</body>
-
-</html>
+<?php
+include ("../../assets/inc/footer.php");
+?>

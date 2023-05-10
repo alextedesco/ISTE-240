@@ -1,33 +1,22 @@
 <!-- Alex Tedesco -->
 <!-- ISTE-240 -->
-<!-- Individual Project 1 -->
+<!-- Individual Project 2 -->
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/styles.css">
-    <!-- Sets the favicon to the Gatlinburg logo -->
-    <link rel="icon" type="image/x-icon" href="../../assets/gatlinburg-logo.png">
-    <title>Hungry Bear BBQ</title>
-</head>
-
-<body>
-    <!-- Container for nav, iframe, and form -->
-    <div class="container">
-        <?php
-          include ("../../inc/nav.php");
-        ?>
-
+<?php
+    $title = "Hungry Bear BBQ";
+    $cssPath = "../../assets/css/styles.css";
+    $jsPath = "../../assets/js/script.js";
+    $faviconPath = "../../assets/images/gatlinburg-logo.png";
+    include ("../../assets/inc/header.php");
+    include ("../../assets/inc/nav.php");
+?>
         <span>
             <h1>History</h1>
             <img src="../../assets/images/hungrybear.jpg">
 
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore at similique, doloribus, sit quis rem aspernatur amet rerum dolore, aut explicabo magnam non. Deserunt quis, ab magni corporis voluptatibus ut!
+                Hungry Bear BBQ is one of the most visited spots in Gatlinburg. They are well known for their cheap prices and large portion 
+                sizes which will always make a family vacation on a budget that much easier to have fun in other areas of Gatlinburg.
             </p>
         </span>
 
@@ -38,7 +27,8 @@
             <img src="../../assets/images/hungrybear_food.jpg">
 
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla vitae quibusdam officia. Esse voluptatibus libero, reiciendis voluptatum sequi optio, recusandae voluptatem soluta beatae qui fuga distinctio tempore repellendus vitae iure.
+                The Hungry Bear BBQ isn't as world renowned compared to the other BBQ places as it holds itself with a 3.9 star rating 
+                out of 5. This does not make the restaurant bad in anyway as it is still on of Gatlinburg's best BBQ places.
                 <i data-star="3.9"></i>
             </p>
         </span>
@@ -50,8 +40,6 @@
             <a href="../../assets/images/hungrybear_menu.png"><img class="menu" src="../../assets/images/hungrybear_menu.png"></a>
         </span>
 
-    </div>
-
-</body>
-
-</html>
+<?php
+include ("../../assets/inc/footer.php");
+?>
